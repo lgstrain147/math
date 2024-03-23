@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Math</title>
+<style>
+table, th, td {
+  border: 1px solid black;
+  border-collapse: collapse;
+}
+</style>
+</head>
+<body>
+<h1>Golden Ratio (&#x3D5) and Fibonacci Sequence</h1>
+<h2>Golden Ratio</h2>
+<h3>Definition</h3>
+<p>&#x3D5 = L/S = L+S / L </p>
+</li>
+<h3>Derivation</h3>
+<p>L<sup>2</sup> = S (L+S)</p>
+<p>L<sup>2</sup> - SL - S<sup>2</sup> = 0</p>
+<p>L = [S +/ &#x221A(S<sup>2</sup> + 4S<sup>2</sup>)]/2 according to the <a href="./quadraticFormula.html">quadratic formula</a></p>
+<p>L = [S +/ &#x221A(S<sup>2</sup> x 5)]/2</p>
+<p>L = [S + S&#x221A 5]/2</p>
+<p>L = [S x (1 +  &#x221A 5)]/2</p>
+<p>L/S = (1 +  &#x221A 5)/2 = 1.618 = &#x3D5</p>
+</li>
+<h3>Kepler's Triangle</h3>
+<ul>
+<li><a href="./righAngleTriange">right angle triangle</a></li>
+<ul>
+<li>length of the sides forms a geometric sequence:
+<ul>
+<li>base = 1</li>
+<li>height = &#x221A &#x3D5</li>
+<li>hypotenuse = &#x3D5 
+</ul>
+</ul>
+<p> TODO: add picture </P>
+<li>therefore &#x3D5<sup>2</sup> = 1 + &#x3D5 or &#x3D5<sup>2</sup> - &#x3D5 - 1 = 0 or 
+&#x3D5 = [1 + &#x221A (1 + 4)] / 2 = 1.618 according to the <a href="./quadraticFormula.html">quadratic formula</a></li> 
+<li>proportions of the Egyptian pyramids</li>
+<p> TODO: add picture </P>
+</ul>
+</li>
+
+<h2>Fibonacci Sequence</h2>
+<p>0,1,1,2,3,5,8,11,19,30,...</p>
+<p>t<sub>n+1</sub> = t<sub>n</sub> + t<sub>n-1</sub</p>
+<p>Used by Pingala in India in 200BC to count possible combinations of patterns of long (2 beat)  and short (1 beat) syllables in lines of Sanskrit poetry consisting of n beats (Chandahsastra)</p>
+<table>
+  <tr>
+    <th>Length</th>
+    <th>Patterns</th>
+  </tr>
+  <tr>
+    <td style="padding:10px">1</td>
+    <td style="padding:10px">S</td>
+  </tr>
+  <tr>
+    <td style="padding:10px">2</td>
+    <td style="padding:10px">SS<br>L</td>
+  </tr>
+  <tr>
+    <td style="padding:10px">3</td>
+    <td style="padding:10px">SSS<br>LS<br>SG</td>
+  </tr>
+  <tr>
+    <td style="padding:10px">n+1</td>
+    <td style="padding:10px">all patterns for n followed by S<br>all patterns for n-1 followed by G</td>
+  </tr>
+</table>
+
+<h2>Golden Ratio is the limit of t<sub>n+1</sub> / t<sub>n</sub> where t<sub>n</sub> is the nth term of the Fibonacci Sequence</h2>
+<p>lim t<sub>n+1</sub> / t<sub>n</sub> = lim t<sub>n</sub> / t<sub>n-1</sub></p>
+<p>(t<sub>n</sub> + t<sub>n-1</sub>) / t<sub>n</sub> = t<sub>n</sub> / t<sub>n-1</sub></p>
+<p> substitute t<sub>n-1i</sub> = S and t<sub>n</sub> = L and solve for L/S as above
+
+<h1>Sources</h1>
+<p><a href="https://fractalenlightenmay'apment.com/15458/fractals/understanding-the-fibonacci-sequence-and-golden-ratio">Understanding the Fibonacci Sequence and Golden Ratio:  fractal enlightenment</a></p>
+<p><a href="https://en.wikipedia.org/wiki/Fibonacci_sequence">Fibonacci sequence:  Wikipedia</a></p>
+<p><a href="https://www.quora.com/How-are-fibonacci-numbers-connected-to-Sanskrit-prosody">How are fibonacci numbers connected to Sanskrit prosody?:  Quora(R. Shreevatsa)</a></p>
+<p><a href="https://en.wikipedia.org/wiki/Pingala">Pingala: Wikipedia</a></p>
+<p><a href="https://en.wikipedia.org/wiki/Kepler_triangle">Kepler Triange:  Wikipedia</a></p>
+</body>
+</html>

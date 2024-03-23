@@ -1,0 +1,326 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Math</title>
+<style>
+table, th, td {
+  border: 1px solid black;
+  border-collapse: collapse;
+}
+</style>
+</head>
+<body>
+	<h1>Euclid's Elements <a href="#refEE">[1]</a></h1>
+	<h2>Book 1: Plane Geometry involving Straight Lines</h2>
+		<h3>Definitions</h3>
+			<ol>
+			<li>Point</li>
+			<li>Line</li>
+			<li value=10><a id="EEB1D10">Perpendicular Lines and Right <a href="angle.html">Angles</a>: intersecting lines with equal angles<br>
+				<img src="perpendicular.jpg"><br>
+			<li value=11><a id=EEB1D11">Obtuse Angle: > right angle</li>
+			<li value=12><a id="EEB1D12">Acute Angle: < right angle</li>
+			<li value=15><a id="EEB1D15">Circle: all points equidistant from center point</li>
+			<li value=19>Rectilinear figures: contained by straight lines
+				<ul>
+					<li>Triangle: 3 straight lines</li>
+					<li>Quadrilateral: 4 straight lines</li>
+					<li>Multilataeral: more than 4 straight lines</li>
+				</ul>
+			</li>
+			<li value=20><a id="EEB1D20"><a href="./triangle.html">Triangles</a>:
+				<ul>
+					<li>Equilateral: 3 equal sides</li>
+					<li>Isoceles Triangle: 2 equal side</li>
+					<li>Scalene Triangle: 3 unequal sides</li>
+				</ul>
+			</li>
+			<li value=21>Triangles:
+				<ul>
+					<li>Right Angle</li> 
+					<li>Obtuse</li>
+					<li>Acute: 3 acute angles</li>
+				</ul>
+			</li>
+			<li value=22>Quadrilaterals:
+				<ul>
+					<li>Square: right angle and equilateral (equal length sides)</li>
+					<li>Rectangle: right angle and not equilateral</li> 
+					<li>Rhombus: not right angle and equilateral</li> 
+					<li>Rhomboid: opposite sides equal</li>
+					<li>Trapezia: other</li>
+				</ul>
+			</li>
+			<a id="EEB1D23"><li value=23>Parallel Lines: do not intersect</li>
+		</ol>
+		<h3>Postulates: assumptions / basis for reasoning</h3>
+		<ol>
+			<li><a id="EEB1Post1">Any 2 points can be connected by a (unique) straight line.
+				(Uniqueness is not explicitly stated but assumed when using this postulate.)</li>
+			<li><a id="EEB1Post2">A straight line can be extended indefinitely</li>
+			<li><a id="EEB1Post3">A circle can be formed with any line segment as its radius</li>
+			<li><a id="EEB1Post4">Right angles are equal to one another</li>
+			<li><a id="EEB1Post5">If sum of internal angles on the same side of a line and two others add < 2 right angles, other lines meet on that side of the line
+				<img src="./postulate5.jpg">
+				<p>Comment: This is exceptionally unjustified.</p>
+
+		</ol>
+			<h3>Common Notions</h3>
+			<ol>
+				<li><a id="EEB1CN1">Things equal to the same thing as equal to each other</li>
+				<li><a id="EEB1CN2">Equal things added to equal things produce equal wholes</li>
+				<li><a id="EEB1CN3">Equal things subtracted from equal things produce equal remainders</li>
+				<li><a id="EEB1CN4">Things coinciding with each other are equal</li>
+				<li><a id="EEB1CN5">The whole is greater than a part</li>
+			</ol>
+		<h3>Propositions</h3>
+			<a id="EEB1P1"><h4>Proposition 1 - Construct an equilateral triangle on a given straight line</h4>
+				<img src="./EEP1.jpg">
+			<a id="EEB1P2"><h4>Proposition 2 - Construct a straight line equal to a given straight line at a given point</h4>
+				<img src="./EEB1P2.jpg">
+			<a id="EEB1P3"><h4>Proposition 3 - Cut off shorter line from longer</h4>
+				<img src="./EEB1P3.jpg">
+				<ul>
+					<li>Construct AD = C (Proposition 2)</li>
+					<li>Construct circle with center A (<a href="#EEB1Post3">Postulate 3</a>)</li>
+					<li>AE = AD = C (<a href="#EEB1D15">Definition 15</a> and <a href="#EEB1CN1">Common Notion 1</a>)</li>
+				</ul>
+				<a href="#refEEB1P3">[3]</a>
+			<a id="EEB1P4"><h4>Proposition 4 - Side Angle Side Theorem</h4></a>
+				<p><img src="sas.jpg"></p>
+				<p>If AB = DE and BC = EF and &#x2220 BAC = &#x2220 EDF, then triangles are congrugent</p>
+				<ul>
+					<li>superimpose &#x2220 BAC on &#x2220 EDF</li>
+	 				<li>points A and D will coincide as will C and F</li>
+					<li>&#x2234 BC = EF (<a href="#EEB1Post1">Postulate 1</a>)</li>
+					<li>and &#x2220 ABD = &#x2220 DEF, &#x2220 BCA = &#x2220 EFC, &#x2220 CAB = &#x2220 FDE and &#x25B3 ABC &#x2245 &#x25B3 DEF <a href="#EEB1CN4">(Common Notion 4</a>)</li>
+				</ul>
+			<a id="EEB1P5"><h4>Proposition 5 - Isosceles Triangles</h4></a>
+				<p>The angles opposite the equal sides are equal</p>
+				<img src="isosceles.jpg">
+				<ol>
+					<li>&#x25B3 ABC is isosceles.</li>
+					<li>and AB = AC (<a href="#EEB1D20">Definition 20</a>)</li>
+					<li>extend AB and AC (<a href="#EEB1Post2">Postulate 2</a>)</li>
+					<li>add points D and E such that BD = CE (<a href="#EEB1P3">Proposition 3</a>)</li>  
+					<li><span style="color: red">AD = </span>AB + AD = AC + CE = <span style="color: red">AE</span> (<a href="#EEB1CN2">Common Notion 2</a>)</li>
+					<li>add lines DC and BE (<a href="#EEB1Post1">Postulate 1</a>)</li>
+					<li>&#x2234 &#x25B3 ABE &#x2245 &#x25B3 ACD and BE = CD and &#x2220 BEA = &#x2220 CDA and &#x2220 ABE = &#x2220 ACD (<a href="#EEB1P4">SAS</a>)</li>
+					<li>&#x2234 &#x25B3 BDC &#x2245 &#x25B3 CEB and &#x2220 DCB = &#x2220 EBC (SAS)</li>
+					<li>and &#x2220 ABE = &#x2220 ACD (7)</li>
+					<li>&#x2234 &#x2220 ABE - &#x2220 EBC = &#x2220 ACD - &#x2220 DCB (<a href="#EEB1CN3">Common Notion 3</a>)</li>
+					<li>&#x2234 &#x2220 ABC = &#x2220 ACB (<a href="#EEB1CN1">Common Notion 1</a>)</li>
+				</ol>
+				<h5>Related links:</h5>
+					<ul>
+						<li><a href="https://www.youtube.com/watch?v=zxxtF5BkcOw">Euclid's Elements Book 1: Proposition 5, Isosceles Triangles. Euler's Academy.</a></li>
+					</ul>
+			<h4>Proposition 6 - If a triangle has two equal angles, the sides opposite the equal angles are equal</h4>
+			<h4>Proposition 7 - Side Side Side</h4>
+				<p>If AC = AD and BC = BD then C = D</p>
+				<img src="sss.jpg">
+				<h5>Proof by contradiction:</h5>
+					<ul>
+						<li>Suppose there is a second triangle DBC and AB = DB and AC = DC</li>
+						<li>add line AD (<a href="#EEB1Post1">Postulate 1</a>)</li>
+						<li>&#x2234 triangles ABD an ACD are isosceles (<a href="#EEB1D20">Definition 20</a>)</li>
+						<li>&#x2234 &#x2220 BAD = &#x2220 BDA and &#x2220 CAD = &#x2220 CDA (<a href="#EEB1P5">Proposition 5</a>)</li>
+						<li><span style="color: red">&#x2220 BAD &nbsp > &nbsp </span> &#x2220 CAD &nbsp = &nbsp &#x2220 CDA &nbsp > &nbsp &#x2220 BDA &nbsp = &nbsp <span style="color: red">&#x2220 BAD</span> (<a href="#EEB1CN5">Common Notion 5</a>)</li>
+						<li>but &#x2220 BAD cannot be > &#x2220 BAD</li>
+						<li>&#x2234 &#x25B3 ABC &#x2245 &#x25B3 DBC</li>
+					</ul>
+			<h4><id'"EEB1P8">Proposition 8 - Side-Side-Side</h4>
+				<p>Two triangles who have sides of equal length are congruent.</p>
+				<ul>
+					<li>Apply &#x25B3 ABC to &#x25B3 DBC as in <a href="#EEB1P7">P7</a></li>
+				</ul>
+			<h4><id'"EEB1P9">Proposition 9 - Cut an angle in half</h4>
+				<img src="./EEB1P9.jpg">
+				<ul>
+					<li>Add point D to line AB</li>
+					<li>Add point E to line AC such that AD = AE (<a href="EEB1P3">P3</a>)</li>
+					<li>Construct equilateral triangle DEF (<a href="EEB1P1">P1</a>)</li>
+					<li>&#x25B3 ADF = &#x25B3 AEF and &#x2220 DAF = &#x2220 EAF (<a href="EEB1P8">SSS</a>)</li>
+				</ul>
+			<h4><id'"EEB1P10">Proposition 10 - Cut a line in half</h4>
+				<img src="./EEB1P10.jpg">
+				<ul>
+					<li>Construct equilateral triangle ABC (<a href="#EEB1P1">P1</a>)</li>
+					<li>Cut &#x2220 ACB in half (<a href="EEEB1P9">P9</a>)</li>
+					<li>&#x2234 &#x25B3 ACD = &#x25B3 BCD (<a href="EEEB1P4">SAS</a>)</li>
+					<li>&#x2234 AD = BD</li>
+				</ul>
+			<a id="EEB1P13"><h4>Proposition 13 - A line stood on another line makes angles which sum to 2 right angles</h4></a>
+				<img src="./proposition13.jpg">
+				<ul>
+					<li>If line (EC) makes angles ACE and ECB and &#x2220 ACE = &#x2220 ECB then &#x2220 ACE and &#x2220 ECB are right angles (<a href="#EEB1D10">Definition 10</a>)</li>
+					<li>Another line ie. DC makes angles ACD and DCB</li>
+					<li><span style="color: red">&#x2220 ACD + &#x2220 DCB</span> = (&#x2220 ACE + &#x2220 ECD) + (&#x2220 ECB - &#x2220 ECD) = <span style="color: red">&#x2220 ACE + &#x2220 ECB</span></li>
+				</ul>
+			<h4><id'"EEB1P14">Proposition 14</h4>
+				<img src = "./EEB1P14.jpg">
+				<p>If &#x2220 CBA + &#x2220 ABD sum to 2 right angles, CD is a straight line.</p>
+				<ul>
+					<li>Extend CB to D (<a href="#EEB1Post2>Post2</a>)</li>
+					<li>&#x2220 CBA + &#x2220 ABE = 2 right angles (<a href="EB1P13">P13</a>)</li>
+					<li>&#x2220 CBA + &#x2220 ABD = &#X2220 CBA + &#x2220 ABE (<a href="EEB1CN1">CN1</a>)</li>
+    					<li>&#x2234 &#x2220 ABD = &#x2220 ABE (<a href="EEB1CN3">CN3</a>)</li>
+					<li>but &#x2220 ABD &nbsp > &nbsp &#x2220 ABE (by construction)</li>
+					<li>&#x2234 CD is a straight linei (proof by contradiction</li>
+				</ul>
+			<h4><id'"EEB1P15">Proposition 15</h4>
+				<p>If 2 straight lines intersect, they make opposite angles equal to each other.</p>
+				<h5>Proof</h5>
+					<img src="./EEB1P15.jpg">
+					<ul> 
+						<li>&#x2220 AED + &#x2220 DEB = 2 right angles (<a href="#EEB1P13">P13</a>)</li>
+						<li>and &#x2220 DEB + &#x2220 BEC = 2 right angles (<a href="#EEB1P13">P13</a>)</li>
+						<li>&#x2234 &#x2220 AED + &#x2220 DEB = &#x2220 DEB + &#x2220 BEC (<a href="#EEB1CN1">CN1</a>)</li>
+						<li>&#x2234 &#x2220 AED + &#x2220 DEB - &#x2220 DEB = &#x2220 DEB + &#x2220 BEC - &#x2220 DEB (<a href="#EEB1CN3">CN3</a>)</li>
+						<li>&#x2234 &#x2220 AED = &#x2220 BEC</li>
+						<li>Similarly, &#x2220 AEC = &#x2220 DEB</li>
+						<li>&#x2234 &#x2220 ABC &nbsp < &nbsp &#x2220 AED</li>
+					</ul>
+			<h4><id="EEB1P16">Proposition 16</h4>
+				<p>When one of the sides of a triange is extended, it creates an external angle bigger than either of the opposite interior angles.</p>
+				<img src="./EEB1P16.jpg">
+				<ul>
+					<li>Place point E at the midpoint of AC (<a href="#EEB1P10">P10</a>)</li>
+					<li>Extend line BE to F such that BE = EF (<a href="#EEB1Post2">Post2</a>,<a href="#EEB1P3">P3</a>)</li>
+					<li>&#x2220 AEB = &#x2220 FEC (<a href="#EEB1P15">P15</a>)</li>
+					<li>&#x2234 &#x25B3 AEB = &#x2220 CEF and &#x2220 BAE = &#x2220 FCA (<href="#EEB1P4">SAS</a>)</li>
+					<li>and &#x2220 FCA &nbsp < &nbsp &#x2220 DCA (<a href="#EECN5">CN5</a>)</li>
+					<li>&#x2234 &#x2220 BAE &nbsp < &nbsp &#x2220 DCA</li>
+					<li>similarly, &#x2220 ABC = &#x2220 HCG</li>
+					<li>and &#x2220 HCG = &#x2220 ICD (<a href="#EEB1P15">P15</a>)</li>
+					<li>&#x2234 &#x2220 ABC = &#x2220 ICD (<a href="#EEB1CN1">CN1</a>)</li>
+					<li>and &#x2220 ICD &nbsp < &nbsp &#x2220 ACD (CN5)</li>
+					<li>&#x2234 &#X2220 ABC &nbsp < &nbsp &#x2220 ACD</li>
+				</ul>
+			<h4><id'"EEB1P17">Proposition 17</h4>
+				<p>The sum of any 2 angles of a triangle is less than 2 right angles.</p>
+				<ul>
+					<li>In diagram for <a href="EEB!P16">P16</a>, &#x2220 ACD >  &#x2220 ABC (P16)</li>
+					<li>&#X2234 &#x2220 ACD + &#x2220 BCA &nbsp > &nbsp &#X2220 ABC + &#x2220 BCA</li>
+					<li>2 right angles &nbps > &npsb &#X2220 ABC + &#X2220 BCA (<a href="EEB1P13">P13</a>)</li>
+					<li>similarly, 2 right angles &npsb > &nbps &#X2220 CAB + &#x2220 BCA ...</li>
+				</ul>
+			<h4><a id="EEB1P18">Proposition 18</h4>
+				<p>In a triangle the longest Side Subtends the Biggest Angle</p>
+				<img src="./EEB1P18.jpg">
+				<ul>
+					<li>If AC is the longest side, add point D such that AD = AB (<a href="#EEB1P3">P3</a>)</li>
+					<li>&#x2220 ADB = &#x2220 ABD (<a href="EEB1P5">P5</a>)</li>
+  					<li>in &#x25B3 DCB, &#x2220 DCB &nbsp < &nbsp &#x2220 ADB (<a href="EEB1P16">P16</a>)</li>
+					<li>&#x2234 &#x2220 DCB &nbsp < &nbsp &#x2220 ABD</li>													    
+					<li>&#x2234 &#x2220 ACB &nbsp < &nbsp &#X2220 ABC (<a href="EEB1CN5">CN5</a>)</li>										 
+					<li>similarly, &#x2220 CAB &nbsp < &nbsp &#x2220 ABC</li> 
+				</ul>
+			<h4><a id="EEB1P22">Proposition 19 - In a triangle, the bigger angle subtends the Biggest Side</h4>
+				<p>Suppose &#x2220 ABC &nbsp > &nbsp &#x2220 BCA and &#x2220 ABC &nbsp > &nbsp &#x2220 BCA and suppose</p>
+					<ol>
+						<li>AC = AB</li>
+							<ul>
+								<li>&#x2234 &#x2220 ABC = &#x2220 BCA (<a href="EEB1P5">P%</a>)</li>
+								<li>&#x2234 AC ~= AB (proof by contradiction)</li>
+							</ul>
+						<li>AC < AB</li>
+							<ul>
+								<li>&#x2220 BCA &nbsp > &nbsp &#x2220 ABC (<a href="EEB1P18">P18</a>)</li>
+								<li>&#x2234 AC > AB (proof by contradiction)</li>
+							</ul>
+					</ol>
+			<h4><a id="EEB1P22">Proposition 20 - The sum of two sides of a triangle is greater than the third side</h4>
+			<img src="./EEB1P20.jpg">
+			<h4><a id="EEB1P22">Proposition 22 - Construct an triangle with sides equal to 3 given straight lines</h4>
+			<h4><a id="EEB1P23">Proposition 23 - Construct an angle equal to a given angle at a given point on a straight line</h4>
+			<h4><a id="EEB1P26">Proposition 26 - Angle Angle Side</h4>
+				<p>If triangles have two angles amd a side that are equal, the triangles are equal.</p>
+				<img src="./aas.jpg">
+				<ul>
+					<li>Suppose &#x2220 ABC = &#x2220 DEF and &#x2220 BCA = &#x2220 EFD> and</li>
+						<ol>
+							<li>BC = EF</li>
+								<ul>
+									<li>if AB > DE, then add point G on AB such that GB = DE (<a href="#EEB1P3">P3</a>)</li>
+									<li> &#x25B3 GBC = &#x25B3 DEF and &#x2220 GCB = &#x2220 ACB (<a href="EEB1P4">SAS</a>)</li>
+									<li>but &#x2220 ACB &nbsp > &nbsp &#x2220 GCB (<a href="EEB1CN5">CN5</a>)</li>
+									<li>&#x2234 AB = DE (proof by contradiction)</li>
+									<li>&#x2234 &#x25B3 ABC = &#x25B3 DEF (SAS)</li>
+								</ul>
+							<li>or AB = DE</li>
+								<ul>
+									<li>if BC > EF, then add point H on BD such that BH = EF (P3)</li>
+									<li>&#x25B3 ABH = &#x25B3 DEF and &#x2220 BAH = &#x2220 BAC (SAS)</li>
+									<li>but &#x2220 BAC &nbsp > &nbsp &#x2220 BAH (CN5)</li>
+									<li>&#x2234 BC = EF (proof by contradition)</li> 
+									<li>&#x2234 &#x25B3 ABC = &#x25B3 DEF (SAS)</li>
+								</ul>
+						</ol>
+			<h4><a id="EEB1P27">Proposition 27 - If line across two other lines makes equal alternate angles, the other two lines are parallel</a></h4>
+			<h4><a id="EEB1P28">Proposition 28</h4>
+				<p>If a line falling across 2 straight lines makes:
+					<ol>
+						<li>the external angle equal to the internal and opposite angle on the same side</li>
+						<li>or the sume of the internal angles on the same side equal to 2 right angles</li>
+					</ol>
+				then the 2 straight lines are parallel</p>
+
+			<h4><a id="EEB1P29">Proposition 29 - If line across parallel lines makes equal alternate angles</h4>
+				<img src="./proposition29.jpg">
+				<h5>Proof by Contradiction</h5>
+					<ul>
+						<li>Suppose &#x2220 AGH &nbsp > &nbsp &#x2220 GHD</li>
+						<li>&#x2234 &#x2220 AGH + &#x2220 BGH &nbsp > &nbsp &#x2220 GHD + &#x2220 BGH (<a href="#EEB1CN2">Common Notion 2</a>)</li>
+						<li>2 right angles > &nbsp &#x2220 GHD + &#x2220 BGH (<a href="#EEB1P13">Proposition 13</a>)</li>
+						<li>&#x2234 AB intersects CD (<a href="#EEB1Post5">Postulate 5</a>)</li>
+						<li>but AB &#x2225 CD and therefore, AB does not intersect CD (<a href="#EEB1D23">Definition 23</a>)</li>
+						<li>&#x2234 &#x2220 AGH = &#x2220 GHD</li>
+					</ul>
+			<h4><id'"EEB1P31">Proposition 31 - Draw a line parallel to a given line through a given point</h4>
+			<h4><id'"EEB1P41">Proposition 41</h4>
+			<h4><a id="EEB1P46">Proposition 46</h4>
+			<h4><a id="EEB1P47">Proposition 47 - Pythagoras' Theorem</h4>
+		<h3>Book 2: Fundamentals of Geometric Algebra</h3>
+		<h3>Book 3: Fundamentals of Plane Geometric Involving Circles</h3>
+		<h3>Book 4: Rectilinear Figures In and Around Circles</h3>
+		<h3>Book 5: Proportion</h3>
+			<h4><id'"EEB5P16">Proposition 16</h3>
+			<h4><id'"EEB5P22">Proposition 22</h3>
+		<h3>Book 6: Similar Figures</h3>
+			<h4><id'"EEB6P1">Proposition 1</h3>
+			<h4><id'"EEB6P2">Proposition 2</h3>
+			<h4><id'"EEB6P4">Proposition 4 - Similar Trianges</h3>
+		<h3>Book 7: Elementary Number Theory</h3>
+		<h3>Book 8: Continued Proportion</h3>
+		<h3>Book 9: Applications of Number Theory</h3>
+		<h3>Book 10: Incommensurable Magnitudes</h3>
+		<h3>Book 11: Elementary Stereometry (3D)</h3>
+		<h3>Book 12: Proportional Stereometry</h3>
+		<h3>Book 13: Platonic Solids</h3>
+<h1>References:</h1>
+<p><a id="refEE">[1]</a> R Fitzpatrick. Euclid's Elements of Geometry. 2008. Available at: 
+<a href="https://farside.ph.utexas.edu/books/Euclid/Elements.pdf ">
+https://farside.ph.utexas.edu/books/Euclid/Elements.pdf
+</a>. Accessed August 20, 2023.</p>
+
+<p><a id="refEEPost3">[2]</a>McMullen, Curtis T. Euclid's Postulates. 1997. Available at:
+<a href="https://people.math.harvard.edu/~ctm/home/text/class/harvard/113/97/html/euclid.html"></a>
+https://people.math.harvard.edu/~ctm/home/text/class/harvard/113/97/html/euclid.html. Accessed August 31 2023.</p>
+
+<p><a id="refEEB1P3">[3]</a> M R McCafferty. Euclid's Elements Book 1: Proposition 3, Constructing A Line 2. Euler's Academy. Available at: 
+<a href="https://www.youtube.com/watch?v=_ZwcobIExto">
+	https://www.youtube.com/watch?v=_ZwcobIExto
+</a>. Accessed August 31, 2023.</p>
+
+<p><a id="ref106">[5]</a> M R McCafferty. Euclid's Elements Book 1: Proposition 7, Side Side Side Theorem 1. Euler's Academy. Available at: 
+<a href="https://www.youtube.com/watch?v=iB_8u9-pVZ8">
+https://www.youtube.com/watch?v=iB_8u9-pVZ8
+</a>. Accessed August 20, 2023.</p>
+
+<p><a id="ref118">[6]</a> M R McCafferty. Euclid's Elements Book 1: Proposition 18. Euler's Academy. Available at: 
+<a href="https://www.youtube.com/watch?v=GP6K-2nvZ-Q&list=PL2V76rajvC1I2TrbPMRLcTqhdcbha4sDE&index=5">
+https://www.youtube.com/watch?v=GP6K-2nvZ-Q&list=PL2V76rajvC1I2TrbPMRLcTqhdcbha4sDE&index=5"
+</a>. Accessed August 20, 2023.</p>
+</body>
+</html>

@@ -1,0 +1,219 @@
+</a><!DOCTYPE html>
+<html>
+<title>Math</title>
+<head>
+<style>
+.dividend {
+	border-top: 1px solid;
+	border-left: 1px solid;
+}
+.minus {
+	border-bottom: 1px solid;
+}
+</style>
+</head>
+<body>
+<h1>Surface Area</h1>
+<h2>Of Cylindar</h2>
+<p>= h * 2&#x03c0r</p>
+<h2>Of Cone (radius r; slope l)</h2>
+<img src="./surfaceAreaOfCone.svg" width="30%" height="auto">
+<ul>
+	<li>Approximate with a n-sided pyramid</li>
+	<li><span style="color:x808080">h<sup>2</sup> + r<sup>2</sup> = l<sup>2</sup> (based on &#x25b3 ABP)</span></li>
+	<li>CD = r sin(&#x3c0/n)</li>
+	<li><span style="color:x808080">AD = r cos(&#x03c0/n) (based on &#x25b3 ACD)</span></li>
+	<li><span style="color:x808080">AD<sup>2</sup> + x<sup>2</sup> = x<sup>2</sup> (based on &#x25b3 ADP)</span></li>
+	<li>area &#x25b3 BCP = 1/2 BC x
+	<ul style="list-style-type:none">
+		<li>= 1/2 2 sin(&#x03c0/n) x</li>
+		<li>= x sin(&#x03c0/n)</li>
+	</ul>
+	</li>
+	<li>surface area of pyramid = nx r sin(&#x03c0/n)</li>
+	<li>surface area of cone = lim n->&#x221e nx r sin(&#x03c0/n)
+	<ul style="list-style-type:none">
+		<li>= lim n->&#x221e x n &#x03c0/n [sin(&#x03c0)/&#x03c0/n)]</li>
+		<li>= &#x03c0 r lim n->&#x221e x lim n->&#x03c0 [sin(&#x03c0)/&#x03c0/n)]</li>
+		<li>= &#x03c0 r * l * 1</li>
+		<li>= &#x03c0rl</li>
+	</ul>
+	</li>
+</ul>
+<h3>Using Calculus</h3>
+<h2>Of Frustrum (Truncated Cone)</h2>
+<img src="./surfaceAreaOfFrustrum.svg" width="15%" height="auto">
+<ul style="list-style-type:none">
+<li>= 2&#x03c0(a+b)/2 l</li>
+<li>= &#x03c0(a+b)l</li>
+</ul>
+<h2><a id="hemisphere">Of (Hemi)sphere</a></h2>
+<h3><a id="egypt">Ancient Egypt</a></h3>
+<h4>Moscow Papyrus Problem 10<a href=#problem10>[1]</a></h4>
+What is the surface area of a basket with a mouth of 4 1/2?
+<h5>Solution</h5>
+<ul>
+	<li>1/9 of 9 = 1</li>
+	<li>9 - 1 = 8 (area of circle)</li>
+	<li>1/9 of 8 = 2/3 1/6 1/18</li>
+	<li>8 - 2/3 1/6 1/18 = 7 1/9</li>
+	<li>4 1/2 * 7 1/9 = 32</li>
+</ul>
+<h5>Interpretation</h5>
+<ul style="list-style-type:none">
+	<li>= 2d(8/9)(8/9)d (According to the Moscow Papyrus)</li>
+	<li>= 2 (8/9)(8/9)d<sup>2</sup></li>
+	<li>= 2 (8/9)(8/9)(2r)<sup>2</sup></li>
+	<li>= 2 (2*8/9)(2*8/9)r<sup>2</sup><li>
+	<li>= 2 (256/81) r <sup>2</sup></li>
+	<li>ie. &#x03c0 = 256/81 
+	<ul>
+		<li>which is consistent with the <a href=#egyptianPi>approximation for &#x03c0 which they used to compute the area of a circle</a></li>
+	</ul>
+	</li>
+</ul>
+<h4>Possible Derivations</h4>
+<h5>Simple</h5>
+<img src="./egyptianSurfaceAreaOfHemisphere.svg" width="30%" height="auto">
+<h5>Based on Volume</h5>
+<ul>
+	<li>area of circle = [(8/9)d]<sup>2</sup></li>
+	<li>volume of cylinder (diameter=d & height=r) = [(8/9)d]<sup>2</sup> x r</li>
+	<li>volume of hemisphere = 2/3 volume of cylinder <a href="./volumeSphere.html">(see Volume of Sphere)</a></li> 
+	<li>surface area of hemisphere<a href="#surfaceAreaUsingVolume">[2]</a> 
+		<ul style="list-style-type:none">
+			<li>= 3/r volume of hemisphere
+				<ul>
+					<li>Proof:
+<img src="./surfaceAreaSphereUsingVolume.svg" width="30%" height="auto">
+						<ul>
+							<li>volume of hemisphere
+								<ul style="list-style-type:none">
+									<li>= &#x2211 pyramids</li>
+									<li>= &#x2211 1/3 br</li>
+									<li>= 1/3 r &#x2211 b</li>
+									<li>= 1/3 r x surface area</li>
+								</ul>
+							</li>
+						</ul>
+					</li>
+				</ul>
+			</li>
+			<li>= 3/r x 2/3 x [(8/9)d]<sup>2</sup> x r</li>
+			<li>= 2/r x (8/9)d(8/9)d x r</li>
+			<li>= 2/r x (8/9)d(8/9)2r x r</li>
+			<li>= (8/9)d(8/9)2r x 2/r x r</li>
+			<li>= (8/9)2d(8/9)r/r x 2r</li>
+			<li>= (8/9)2d(8/9) x d</li>
+		</ul>
+	</li>
+</ul>
+<h3>Intuitively<a href=#intuitive">[3]</a></h3>
+<img src="./surfaceAreaOfSphereLimits.svg" width="30%" height="auto">
+<ul>
+	<li>inscribe a n-sided polygon in the circle</li>
+	<li>rotate the polygon around the x-axis</li>
+	<li>cut the polygon vertically to form (n/4 - 1) x 2 frustum and 2 cones</li>
+	<li>as n->&#x221e surface area of frustrum and cones -> surface area of sphere
+		<ul style="list-style-type:none">
+			<li>= lim n->&#x221e 2 * &#x03c0(r1 + r2)s + 2 * r1&#x0320s</li>
+			<li>= lim n->&#x2213 2&#x03c0s(2 r1 + r2)
+				<ul style="list-style-type:none">
+					<li>note: trianges ABI, JCK and EAD are similar</li>
+					<li>&#x2234 r1/d1 = r2/d2 = AD/s</li>
+					<li>&#x2234 r1 * s = d1 * AD and r2 * s = d2 * AD</li>
+					<li>&#x2234 2 r1 * s + r2 * s = 2 d1 * AD + d2 * AD</li>
+					<li>&#x2234 s (2 * r1 + r2) = AD (2 d1 + d2)</li>
+					<li>&#x2234 2 * r1 + r2 = AD (AE/2) / s = (AD * AE)/(2s) </li>
+				</ul>
+			</li>
+			<li>= lim n->&#x221e 2&#x03c0s * (AD * AE)/2s</li>
+			<li>= lim n->&#x221e &#x03c0s * (AD * 2r)</li>
+			<li>= 2&#x03c0r * lim n->&#x2213 AD</li>
+			<li>= 2&#x03c0r * 2r</li>
+			<li>= 4&#x03c0r<sup>2</sup></li>
+		</ul>
+	</li>
+</ul>
+<h3>Equal to Surface Area of Cylindar with Same Diameter and Height<a href=#tube>[4]</a></h3>
+<img src="./sphereToCylindar3.svg" width="30%" height="auto">
+<ul>
+	<li>cover sphere in small rectangles</li>
+	<li>project rectanges onto cylindar from points on the vertical axis</li>
+	<li>in the top view:
+		<ul>
+			<li>&#x25b3 EFG ~ &#x25b3 EHI</li>
+			<li>&#x2234 HI/FG = r/d</li>
+		</ul>
+	</li>
+	<li>in the side view:
+		<ul>
+			<li> AB is tangent to the sphere</li>
+			<li>&#x2234 < ABO = 90&deg</li>
+			<li>< ABD + < DBO = < ABD = 90&deg = < CBA + < ABD</li>
+			<li>&#x2234 < DBO = < CBD</li>
+			<li>&#x2234 &#x25b3 BDO ~ &#x25b3 BCA</li>
+			<li>&#x2234 BC/AB = d/r</li>
+		</ul>
+	</li>
+	<li>&#x2234 width of projected rectanges are r/d wider and d/r shorter than corresponding rectange on the surface of the sphere</li>
+	<li>&#x2234 the area of rectanges projected onto the cylindar are the same as the corresponding rectange on the surface of the sphere</li>
+	<li>furthermore, note that the surface area of the cylinder is: 2&#x03c0r * 2r = 4&#x03c0r<sup>2</sup></li>
+	<li>finally, note:
+		<ul>
+			<li>that a 2&#x03c0r * 2r rectangle can be divided into 4 trianges which have a base of 2&#x03c0r and a height of r</li>
+			<li>each triangle has a area of 1/2 2&#x03c0r<sup>2</sup> = &#x03c0r<sup>2</sup></li>
+			<li>each triangle has the same area as a circle with the same radius as the sphere</li>
+<img src="./unroll.svg" width="30%" height="auto">
+			<li>&#x2234 the surface area of the sphere is the same as the area of 4 circles with the same radius</li>
+		</ul>
+	</li>
+</ul>
+<img src="./sphereToCircles.svg" width="30%" height="auto">
+<h3>According to Grant Sanderson (3Blue1Brown) <a href=#sanderson>[5]</a></h3>
+<img src="./surfaceAreaSphere3Blue1Brown.svg" width="30%" height="auto">
+<ul>
+	<li>area of ring
+		<ul style="list-style-type:none">
+			<li>= 2&#x03c0 r sin(&#x03b8) r d&#X03b8</li>
+			<li>= 2&#X03c0 r<sup>2</sup> sin(&#x03b9)d(&#x03b8)<li>
+		</ul>
+	</li>
+	<li>s / (r d&#x03b8) =  r cos(&#x03b8) r</li>
+		<ul>
+			<li>&#x2234 s = r cos(&#x03b8) d&#x03b8)</li>
+		</ul>
+	</li>
+	<li>&#x2234 area of shadow 
+		<ul>
+			<li>= 2&#x03c0 r sin(&#x03b8) r cos(&#x03b8)d(&#x03b8)</li> 
+			<li>= &#x03c0 r<sup>2</sup> 2sin(&#x03b8)cos(&#x03b8)d(&#x03b8)</li>
+			<li>= &#x03c0 r<sup>2</sup> <a href="./trig.html#sinab">sin(2&#X03b8)</a>d(&#x03b8)</li>
+		</ul>
+	</li>
+	<li>&#x2234 area of ring = 2 area of shadow of ring at 2&#x03b8</li>
+	<li>sum of areas of shadows of rings of hemispere = &#x03c0r<sup>2</sup></li>
+	<li>&#x2234 sum of area of rings of hemisphere = 2&#x03c0r<sup>2</sup></li>
+	<li>&#x2234 sum of area of rings of sphere = 4&#x03c0r<sup>2</sup></li>
+</ul>
+<h3>Using Calculus</h3>
+<p><a href="https://www.youtube.com/watch?v=J42wNwCh0Mk">https://www.youtube.com/watch?v=J42wNwCh0Mk</a></p>
+<ul style="list-style-type:none">
+	<li>4&#x03c0r<sup>2</sup></li>
+</ul>
+<h1>References</h1>
+<p><a id="problem10">[1]</a>Wikipedia contributors. Moscow Mathematical Papyrus. Wikipedia, The Free Encyclopedia. October 28, 2023, 01:22 UTC. Available at: <a href="https://en.wikipedia.org/w/index.php?title=Moscow_Mathematical_Papyrus&oldid=1182239454">https://en.wikipedia.org/w/index.php?title=Moscow_Mathematical_Papyrus&oldid=1182239454"</a>. Accessed March 23, 2024.</p>
+<p><a id="surfaceAreaUsingVolume">[2]</a>Understanding the Volume of a Sphere Formula. mathematicsonline. Available at: 
+	<a href="https://www.youtube.com/watch?v=xuPl_8o_j7k">https://www.youtube.com/watch?v=xuPl_8o_j7k</a>
+	. Accessed March 23, 2024.</p>
+<p><a id="intuitive">[3]</a>Understanding the Surface Area of A Sphere Formula. Mathematisonline. Available at: 
+	<a href="https://www.youtube.com/watch?v=6EzQEdBX_30">https://www.youtube.com/watch?v=6EzQEdBX_30</a>
+	. Accessed March 2, 2024.</p>
+<p><a id="tube">[4]</a>Sanderson, Grant. But why is a sphere's surface area four times its shadow. 3Blue1Brown. Available at: 
+	<a href="https://www.youtube.com/watch?v=GNcFjFmqEc8">https://www.youtube.com/watch?v=GNcFjFmqEc8</a>
+	. Accessed February 24, 2024.</p>
+<p><a id="sanderson">[5]</a>Sanderson, Grant. But why is a sphere's surface area four times its shadow. 3Blue1Brown. Available at: 
+	<a href="https://www.youtube.com/watch?v=GNcFjFmqEc8">https://www.youtube.com/watch?v=GNcFjFmqEc8</a>
+	. Accessed February 24, 2024.</p>
+</body>
+</html>

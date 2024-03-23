@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Math</title>
+<style>
+table, th, td {
+  border: 1px solid black;
+  border-collapse: collapse;
+}
+</style>
+</head>
+<body>
+<h1>Bayes Theorem</h1>
+<ul style="list-style-type:none">
+<li>P(H/E)</li>
+<li>= [P(H) P(E|H)] / P(E) <a href=#formula>[1]</a></p>a</li>
+<li>= [P(H) P(E|H)] / [P(H)P(E|H) + P(~H)P(E|~H)]
+</ul>
+<img src="bayes.svg" width="25%" height="auto">
+<ul>
+	<li>P(H) = H/U (prior <a href=#prior>[2]</a>)<li>
+	<li>P(E) = E/U</li>
+	<li>P(E|H) = (E &#x2229 H) / H (likelihood <a href=#likelihood>[3]</a>) </li>
+	<li>P(H|E) = (E &#x2229 H) / E</li>
+	<br>
+	<li>[P(H) P(E|H)] / P(E)
+		<ul style="list-style-type:none">
+			<li>= [H/U (H &#x2229 E) / H] / [E/U]</li>
+			<li>= H/U (H &#x2229 E)/L U/E</li> 
+			<li>= <s>H</s>/<s>U</s> (H &#x2229 E)/<s>H</s> <s>U</s>/E</li> 
+			<li>=  (H &#x2229 E)/H</li> 
+			<li>=  P(H|E) (posterior <a href=#posterior>[4]</a>)</li> 
+        	</ul>
+	</li>
+	<br>
+	<li>P(H)P(E|H) + P(~H)P(E|~H)
+		<ul style="list-style-type:none">
+			<li>= H/U (E &#x2229 H)/H + (U-H)/U (E - E &#x2229 H)/(U-H)</li>
+			<li>= <s>H</s>/U (E &#x2229 H)/<s>H</s> + <s>(U-H)</s>/U (E - E &#x2229 H)/<s>(U-H)</s></li>
+			<li>= (E &#x2229 H)/U + (E - E &#x2229 H)/U</li>
+			<li>= E/U</li>
+			<li>=P(E)</li>
+		</ul>
+	</li>
+</ul>
+<h2>Application:<a href=#application>[5]</a></h2>
+<ul>
+	<li>What is probablity that hypothesis is true given evidence (ie. P(E|H))?</li>
+	<li>evaluate hypothesis given new evidence</li>
+</ul>
+<h1>References</h1>
+<p><a id="formula">[1]</a> Bayes Theorem, the geometry of changing beliefs. 3Blue1Brown. Available at: 
+	<a href="https://www.youtube.com/watch?v=HZGCoVF3YvM&t=32s">https://www.youtube.com/watch?v=HZGCoVF3YvM&t=32s"</a>
+	. Accessed February 9, 2024.</p>
+<p><a id="prior">[2]</a> Bayes Theorem, the geometry of changing beliefs. 3Blue1Brown. Available at: 
+	<a href="https://www.youtube.com/watch?v=HZGCoVF3YvM&t=32s">https://www.youtube.com/watch?v=HZGCoVF3YvM&t=32s"</a>
+	. Accessed February 9, 2024.</p>
+<p><a id="likelihood">[3]</a> Bayes Theorem, the geometry of changing beliefs. 3Blue1Brown. Available at: 
+	<a href="https://www.youtube.com/watch?v=HZGCoVF3YvM&t=32s">https://www.youtube.com/watch?v=HZGCoVF3YvM&t=32s"</a>
+	. Accessed February 9, 2024.</p>
+<p><a id="posterior">[4]</a> Bayes Theorem, the geometry of changing beliefs. 3Blue1Brown. Available at: 
+	<a href="https://www.youtube.com/watch?v=HZGCoVF3YvM&t=32s">https://www.youtube.com/watch?v=HZGCoVF3YvM&t=32s"</a>
+	. Accessed February 9, 2024.</p>
+<p><a id="application">[5]</a> Bayes Theorem, the geometry of changing beliefs. 3Blue1Brown. Available at: 
+	<a href="https://www.youtube.com/watch?v=HZGCoVF3YvM&t=32s">https://www.youtube.com/watch?v=HZGCoVF3YvM&t=32s"</a>
+	. Accessed February 9, 2024.</p>
+</body>
+</html>
