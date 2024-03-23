@@ -1,0 +1,1294 @@
+x<!DOCTYPE html>
+<html>
+<head>
+<style>
+#myInput {
+  width: 100%;
+  font-size: 16px;
+  padding: 12px 20px 12px 40px;
+  border: 1px solid #ddd;
+  margin-bottom: 12px;
+}
+table{
+	table-layout: fixed;
+	border: none;
+	border-collapse: collapse;
+}
+tr>th {
+	left: 0;
+}
+tr:first-child {
+	top: 0;
+	position: sticky;
+	background-color: #ffffc2;
+}
+tr>th:first-child {
+	left: 0;
+	position: sticky;
+	text-align: left;
+	border-left: 1px solid;
+	background-color: #ffffc2;
+}
+td {
+	border-left: 1px solid;
+	border-right: 1px solid;
+}
+.major-row {
+	border-top: 1px solid;
+	border-bottom: none;
+}
+.minor-row {
+	border-top: 1px solid; 
+	border-color: #a9a9a9; 
+	border-bottom: none;
+}
+.scroll-box {
+	width: 1200px;
+	height: 600px;
+	overflow: auto;
+	position: relative;
+}
+.
+</style>
+<title>Math</title>
+</head>
+<body>
+<h1>First Principles - The History of Math</h1>
+<input type="text" id="myInput" onkeyup="myFunction()" placeholder="search criteria">
+<div class="scroll-box">
+<table id="myTable">
+<thead>
+</thead>
+<tbody>
+<tr>
+	<th bgcolor="ffffc2" style="min-width:350px">DATE:</th>
+	<!-- 2600-1801 BC --><td bgcolor="ffffc2" style="min-width:150px">2600-1801 BC</td>
+	<!-- 1830-1531 BC --><td bgcolor="ffffc2" style="min-width:150px">1830-1531 BC</td>
+	<!-- 1000 BC - 100 BC --><td bgcolor="ffffc2" style="min-width:150px">1000 BC - 100 BC</td>
+	<!-- 570-495 BC --><td bgcolor="ffffc2" style="min-width:150px">570 - 495 BC</td>
+	<!--480-411 BC --><td bgcolor="ffffc2" style="min-width:150px">480 - 411 BC</td>
+	<!-- 408-355 BC --><td bgcolor="ffffc2" style="min-width:150px">408 - 355 BC</td>
+	<!-- 300 BC --><td bgcolor="ffffc2" style="min-width:150px">300 BC</td>
+	<!-- 287-212 BC --><td bgcolor="ffffc2" style="min-width:150px">287 - 212 BC</td>
+	<!-- 200 BC --><td bgcolor="ffffc2" style="min-width:150px">200 BC</td>
+	<!-- 3 BC - 2AD --><td bgcolor="ffffc2" style="min-width:150px">3 BC -<br>2 AD</td>
+	<!-- 200-300 --><td bgcolor="ffffc2" style="min-width:150px">200-300</td>
+	<!-- 225-295 --><td bgcolor="ffffc2" style="min-width:150px">200-300</td>
+	<!-- 600 --><td bgcolor="ffffc2" style="min-width:150px">600</td>
+	<!-- 800-1000 --><td bgcolor="ffffc2" style="min-width:150px">800-1000</td>
+	<!-- 900-1000 --><td bgcolor="ffffc2" style="min-width:150px">900-1000</td>
+	<!-- 1202 --><td bgcolor="ffffc2" style="min-width:150px">1202</td>
+	<!-- 1646 --><td bgcolor="ffffc2" style="min-width:150px">1646</td>
+	<!-- 1707-1783 --><td bgcolor="ffffc2" style="min-width:150px">1707 - 1783</td>
+	<!-- today --><td bgcolor="ffffc2" style="min-width:350px">today</td>
+</tr>
+<tr class="major-row">
+	<th>Numbers:</th>
+	<!--2600-1801 BC --><td></td>
+	<!--1830-1531 BC --><td></td>
+	<!-- 1000 BC - 100 BC --><td></td>
+	<!--570-495 BC --><td></td>
+	<!--480-411 BC --><td></td>
+	<!-- 408-355 BC --><td></td>
+	<!-- 300 BC --><td></span></td>
+	<!-- 287-212 BC --><td></span></td>
+	<!-- 200 BC --><td></span></td>
+	<!-- 3 BC - 2 AD --><td></span></td0>
+	<!-- 200-300 --><td></span></td>
+	<!-- 225-295 --><td></span></td>
+	<!-- 600 --><td></td>
+	<!-- 800-1000 --><td></td>
+	<!-- 900-1000 --><td></td>
+	<!-- 1202 --><td></span></td>
+	<!-- 1646 --><td></td>
+	<!-- 1707-1783 --><td></td>
+	<!-- 1763 --><td></td>
+	<!-- today --><td></td>
+</tr>
+<tr class="minor-row">
+	<th>
+		<p style="margin-left:25px">natural numbers &#x2208 N = {1,2,3,...)</p>
+	</th>
+	<!--2600-1801 BC --><td><a href="./egyptianNumbers.html">Rhind: (Egypt)</a></td>
+	<!--1830-1531 BC --><td></td>
+	<!-- 1000 BC - 100 BC --><td></td>
+	<!--570-495 BC --><td></td>
+	<!--480-411 BC --><td></td>
+	<!-- 408-355 BC --><td></td>
+	<!-- 300 BC --><td></span></td>
+	<!-- 287-212 BC --><td></span></td>
+	<!-- 200 BC --><td></span></td>
+	<!-- 3 BC - 2 AD --><td></span></td>
+	<!-- 200-300 --><td></span></td>
+	<!-- 225-295 --><td></span></td>
+	<!-- 600 --><td></span></td>
+	<!-- 800-1000 --><td></td>
+	<!-- 900-1000 --><td></td>
+	<!-- 1202 --><td></span></td>
+	<!-- 1646 --><td></td>
+	<!-- 1707-1783 --><td></td>
+	<!-- 1763 --><td></td>
+	<!-- today --><td></td>
+</tr>
+<tr class="minor-row">
+	<th>
+		<p style="margin-left:50px">base</p>
+	</th>
+	<!--2600-1801 BC --><td><a href="./egyptianNumbers.html">Rhind: (Egypt)</a></td>
+	<!--1830-1531 BC --><td></td>
+	<!-- 1000 BC - 100 BC --><td></td>
+	<!--570-495 BC --><td></td>
+	<!--480-411 BC --><td></td>
+	<!-- 408-355 BC --><td></td>
+	<!-- 300 BC --><td></span></td>
+	<!-- 287-212 BC --><td></span></td>
+	<!-- 200 BC --><td></span></td>
+	<!-- 3 BC - 2 AD --><td></span></td>
+	<!-- 200-300 --><td></span></td>
+	<!-- 225-295 --><td></span></td>
+	<!-- 600 --><td></span></td>
+	<!-- 800-1000 --><td></td>
+	<!-- 900-1000 --><td></td>
+	<!-- 1202 --><td></span></td>
+	<!-- 1646 --><td></td>
+	<!-- 1707-1783 --><td></td>
+	<!-- 1763 --><td></td>
+	<!-- today --><td></td>
+</tr>
+<tr class="minor-row">
+	<th>
+		<p style="margin-left:75px">10</p>
+	</th>
+	<!--2600-1801 BC --><td><a href="./egyptianNumbers.html">Rhind: (Egypt)</a></td>
+	<!--1830-1531 BC --><td></td>
+	<!-- 1000 BC - 100 BC --><td></td>
+	<!--570-495 BC --><td></td>
+	<!--480-411 BC --><td></td>
+	<!-- 408-355 BC --><td></td>
+	<!-- 300 BC --><td></span></td>
+	<!-- 287-212 BC --><td></span></td>
+	<!-- 200 BC --><td></span></td>
+	<!-- 3 BC - 2 AD --><td></span></td>
+	<!-- 200-300 --><td></span></td>
+	<!-- 225-295 --><td></span></td>
+	<!-- 600 --><td></span></td>
+	<!-- 800-1000 --><td></td>
+	<!-- 900-1000 --><td></td>
+	<!-- 1202 --><td></span></td>
+	<!-- 1646 --><td></td>
+	<!-- 1707-1783 --><td></td>
+	<!-- 1763 --><td></td>
+	<!-- today --><td></td>
+</tr>
+<tr class="minor-row">
+	<th>
+		<p style="margin-left:75px">binary</p>
+	</th>
+	<!--2600-1801 BC --><td><a href="./rhind.html#multiplication">Rhind: (Egypt)</a></td>
+	<!--1830-1531 BC --><td></td>
+	<!-- 1000 BC - 100 BC --><td></td>
+	<!--570-495 BC --><td></td>
+	<!--480-411 BC --><td></td>
+	<!-- 408-355 BC --><td></td>
+	<!-- 300 BC --><td></td>
+	<!-- 287-212 BC --><td></td>
+	<!-- 200 BC --><td></td>
+	<!-- 3 BC - 2 AD --><td></span></td>
+	<!-- 200-300 --><td></span></td>
+	<!-- 225-295 --><td></span></td>
+	<!-- 600 --><td></span></td>
+	<!-- 800-1000 --><td></td>
+	<!-- 900-1000 --><td></td>
+	<!-- 1202 --><td></td>
+	<!-- 1646 --><td>Leibniz</td>
+	<!-- 1707-1783 --><td></td>
+	<!-- 1763 --><td></td>
+	<!-- today --><td></td>
+</tr>
+<tr class="minor-row">
+	<th>
+		<p style="margin-left:25px">whole numbers = 0 &#x222a N</p>
+	</th>
+	<!--2600-1801 BC --><td></td>
+	<!--1830-1531 BC --><td></td>
+	<!-- 1000 BC - 100 BC --><td></td>
+	<!--570-495 BC --><td></td>
+	<!--480-411 BC --><td></td>
+	<!-- 408-355 BC --><td></td>
+	<!-- 300 BC --><td></span></td>
+	<!-- 287-212 BC --><td></span></td>
+	<!-- 200 BC --><td></span></td>
+	<!-- 3 BC - 2 AD --><td></span></td>
+	<!-- 200-300 --><td></span></td>
+	<!-- 225-295 --><td></span></td>
+	<!-- 600 --><td></span></td>
+	<!-- 800-1000 --><td></td>
+	<!-- 900-1000 --><td></td>
+	<!-- 1202 --><td></span></td>
+	<!-- 1646 --><td></td>
+	<!-- 1707-1783 --><td></td>
+	<!-- 1763 --><td></td>
+	<!-- today --><td></td>
+</tr>
+<tr class="minor-row">
+	<th>
+		<p style="margin-left:25px">integers = w<sub>1</sub> - w<sub>2</sub) where w<sub>1</sub>,w<sub>2</sub> &#x2208 W</p>
+	</th>
+	<!--2600-1801 BC --><td></td>
+	<!--1830-1531 BC --><td></td>
+	<!-- 1000 BC - 100 BC --><td></td>
+	<!--570-495 BC --><td></td>
+	<!--480-411 BC --><td></td>
+	<!-- 408-355 BC --><td></td>
+	<!-- 300 BC --><td></span></td>
+	<!-- 287-212 BC --><td></span></td>
+	<!-- 200 BC --><td></span></td>
+	<!-- 3 BC - 2 AD --><td></span></td>
+	<!-- 200-300 --><td></span></td>
+	<!-- 225-295 --><td></span></td>
+	<!-- 600 --><td></span></td>
+	<!-- 800-1000 --><td></td>
+	<!-- 900-1000 --><td></td>
+	<!-- 1202 --><td></span></td>
+	<!-- 1646 --><td></td>
+	<!-- 1707-1783 --><td></td>
+	<!-- 1763 --><td></td>
+	<!-- today --><td></td>
+</tr>
+<tr class="minor-row">
+	<th>
+		<p style="margin-left:25px">Fractions(Rational numbers)  =  w/n</p>
+	</th>
+	<!--2600-1801 BC --><td></td>
+	<!--1830-1531 BC --><td></td>
+	<!-- 1000 BC - 100 BC --><td></td>
+	<!--570-495 BC --><td></td>
+	<!--480-411 BC --><td></td>
+	<!-- 408-355 BC --><td></td>
+	<!-- 300 BC --><td></span></td>
+	<!-- 287-212 BC --><td></span></td>
+	<!-- 200 BC --><td></span></td>
+	<!-- 3 BC - 2 AD --><td></span></td>
+	<!-- 200-300 --><td></span></td>
+	<!-- 225-295 --><td></span></td>
+	<!-- 600 --><td></span></td>
+	<!-- 800-1000 --><td></td>
+	<!-- 900-1000 --><td></td>
+	<!-- 1202 --><td></span></td>
+	<!-- 1646 --><td></td>
+	<!-- 1707-1783 --><td></td>
+	<!-- 1763 --><td></td>
+	<!-- today --><td></td>
+</tr>
+<tr class="minor-row">
+	<th>
+		<p style="margin-left:50px">1/n; 2/3</p>
+	</th>
+	<!--2600-1801 BC --><td><a href="./egyptianNumbers.html#fractions">Rhind: (Egypt)</a></td>
+	<!--1830-1531 BC --><td></td>
+	<!-- 1000 BC - 100 BC --><td></td>
+	<!--570-495 BC --><td></td>
+	<!--480-411 BC --><td></td>
+	<!-- 408-355 BC --><td></td>
+	<!-- 300 BC --><td></span></td>
+	<!-- 287-212 BC --><td></span></td>
+	<!-- 200 BC --><td></span></td>
+	<!-- 3 BC - 2 AD --><td></span></td>
+	<!-- 200-300 --><td></span></td>
+	<!-- 225-295 --><td></span></td>
+	<!-- 600 --><td>Akhmim (Greece)<a href=#reciprocalFractions>[1]</a></span></td>
+	<!-- 800-1000 --><td></td>
+	<!-- 900-1000 --><td></td>
+	<!-- 1202 --><td></span></td>
+	<!-- 1646 --><td></td>
+	<!-- 1707-1783 --><td></td>
+	<!-- 1763 --><td></td>
+	<!-- today --><td></td>
+</tr>
+<tr class="minor-row">
+	<th>
+		<p style="margin-left:50px">other than 1/n</p>
+	</th>
+	<!--2600-1801 BC --><td></td>
+	<!--1830-1531 BC --><td></td>
+	<!-- 1000 BC - 100 BC --><td></td>
+	<!--570-495 BC --><td></td>
+	<!--480-411 BC --><td></td>
+	<!-- 408-355 BC --><td></td>
+	<!-- 300 BC --><td></span></td>
+	<!-- 287-212 BC --><td></span></td>
+	<!-- 200 BC --><td></span></td>
+	<!-- 3 BC - 2 AD --><td>Egypt<a href=#otherThan1>[2]</a></span></td>
+	<!-- 200-300 --><td></span></td>
+	<!-- 225-295 --><td></span></td>
+	<!-- 600 --><td></span></td>
+	<!-- 800-1000 --><td></td>
+	<!-- 900-1000 --><td></td>
+	<!-- 1202 --><td></span></td>
+	<!-- 1646 --><td></td>
+	<!-- 1707-1783 --><td></td>
+	<!-- 1763 --><td></td>
+	<!-- today --><td></td>
+</tr>
+<tr class="minor-row">
+	<th>
+		<p style="margin-left:25px">irrational (ie. &#x221a 2)</p>
+	</th>
+	<!--2600-1801 BC --><td></td>
+	<!--1830-1531 BC --><td></td>
+	<!-- 1000 BC - 100 BC --><td></td>
+	<!--570-495 BC --><td></td>
+	<!--480-411 BC --><td></td>
+	<!-- 408-355 BC --><td></td>
+	<!-- 300 BC --><td></span></td>
+	<!-- 287-212 BC --><td></span></td>
+	<!-- 200 BC --><td></span></td>
+	<!-- 3 BC - 2 AD --><td></span></td>
+	<!-- 200-300 --><td></span></td>
+	<!-- 225-295 --><td></span></td>
+	<!-- 600 --><td></span></td>
+	<!-- 800-1000 --><td></td>
+	<!-- 900-1000 --><td></td>
+	<!-- 1202 --><td></span></td>
+	<!-- 1646 --><td></td>
+	<!-- 1707-1783 --><td></td>
+	<!-- 1763 --><td></td>
+	<!-- today --><td></td>
+</tr>
+<tr class="minor-row">
+	<th>
+		<p style="margin-left:50px">rational approximations to square roots</p>
+	</th>
+	<!--2600-1801 BC --><td></td>
+	<!--1830-1531 BC --><td></td>
+	<!-- 1000 BC - 100 BC --><td></td>
+	<!--570-495 BC --><td></td>
+	<!--480-411 BC --><td></td>
+	<!-- 408-355 BC --><td></td>
+	<!-- 300 BC --><td></td>
+	<!-- 287-212 BC --><td></td>
+	<!-- 200 BC --><td></td>
+	<!-- 3 BC - 2 AD --><td>Egypt<a href=#approxSquareRoots>[3]</a></td>
+	<!-- 200-300 --><td></span></td>
+	<!-- 225-295 --><td></span></td>
+	<!-- 600 --><td></span></td>
+	<!-- 800-1000 --><td></td>
+	<!-- 900-1000 --><td></td>
+	<!-- 1202 --><td></td>
+	<!-- 1646 --><td></td>
+	<!-- 1707-1783 --><td></td>
+	<!-- 1763 --><td></td>
+	<!-- today --><td></td>
+</tr>
+<tr class="minor-row">
+	<th>
+		<p style="margin-left:25px">complex &#x221a-1</p>
+	</th>
+	<!--2600-1801 BC --><td></td>
+	<!--1830-1531 BC --><td></td>
+	<!-- 1000 BC - 100 BC --><td></td>
+	<!--570-495 BC --><td></td>
+	<!--480-411 BC --><td></td>
+	<!-- 408-355 BC --><td></td>
+	<!-- 300 BC --><td></span></td>
+	<!-- 287-212 BC --><td></span></td>
+	<!-- 200 BC --><td></span></td>
+	<!-- 3 BC - 2 AD --><td></span></td>
+	<!-- 200-300 --><td></span></td>
+	<!-- 225-295 --><td></span></td>
+	<!-- 600 --><td></span></td>
+	<!-- 800-1000 --><td></td>
+	<!-- 900-1000 --><td></td>
+	<!-- 1202 --><td></span></td>
+	<!-- 1646 --><td></td>
+	<!-- 1707-1783 --><td></td>
+	<!-- 1763 --><td></td>
+	<!-- today --><td></td>
+</tr>
+<tr class="major-row">
+	<th>
+	Arithmetic:
+	</th>
+	<!--2600-1801 BC --><td><a href="./rhind.html#arithmetic">Rhind: (Egypt)</a></td>
+	<!--1830-1531 BC --><td></td>
+	<!-- 1000 BC - 100 BC --><td></td>
+	<!--570-495 BC --><td></td>
+	<!--480-411 BC --><td></td>
+	<!-- 408-355 BC --><td></td>
+	<!-- 300 BC --><td></span></td>
+	<!-- 287-212 BC --><td></span></td>
+	<!-- 200 BC --><td></span></td>
+	<!-- 3 BC - 2 AD --><td></span></td>
+	<!-- 200-300 --><td></span></td>
+	<!-- 225-295 --><td></span></td>
+	<!-- 600 --><td></span></td>
+	<!-- 800-1000 --><td></td>
+	<!-- 900-1000 --><td></td>
+	<!-- 1202 --><td></span></td>
+	<!-- 1646 --><td></td>
+	<!-- 1707-1783 --><td></td>
+	<!-- 1763 --><td></td>
+	<!-- today --><td></td>
+</tr>
+<tr class="minor-row">
+	<th>
+		<p style="margin-left:25px">addition</p>
+	</th>
+	<!--2600-1801 BC --><td><a href="./rhind.html#2DividedBy">Rhind: (Egypt)</a></td>
+	<!--1830-1531 BC --><td></td>
+	<!-- 1000 BC - 100 BC --><td></td>
+	<!--570-495 BC --><td></td>
+	<!--480-411 BC --><td></td>
+	<!-- 408-355 BC --><td></td>
+	<!-- 300 BC --><td></span></td>
+	<!-- 287-212 BC --><td></span></td>
+	<!-- 200 BC --><td></span></td>
+	<!-- 200-300 --><td></span></td>
+	<!-- 225-295 --><td></span></td>
+	<!-- 3 BC - 2 AD --><td></span></td>
+	<!-- 600 --><td></span></td>
+	<!-- 800-1000 --><td></td>
+	<!-- 900-1000 --><td></td>
+	<!-- 1202 --><td></span></td>
+	<!-- 1646 --><td></td>
+	<!-- 1707-1783 --><td></td>
+	<!-- 1763 --><td></td>
+	<!-- today --><td></td>
+</tr>
+<tr class="minor-row">
+	<th>
+		<p style="margin-left:25px">subtractraction</p>
+	</th>
+	<!--2600-1801 BC --><td><a href="./rhind.html#subtractFractionsFrom1">Rhind: (Egypt)</a></td>
+	<!--1830-1531 BC --><td></td>
+	<!-- 1000 BC - 100 BC --><td></td>
+	<!--570-495 BC --><td></td>
+	<!--480-411 BC --><td></td>
+	<!-- 408-355 BC --><td></td>
+	<!-- 300 BC --><td></span></td>
+	<!-- 287-212 BC --><td></span></td>
+	<!-- 200 BC --><td></span></td>
+	<!-- 3 BC - 2 AD --><td></span></td>
+	<!-- 200-300 --><td></span></td>
+	<!-- 225-295 --><td></span></td>
+	<!-- 600 --><td></span></td>
+	<!-- 800-1000 --><td></td>
+	<!-- 900-1000 --><td></td>
+	<!-- 1202 --><td></span></td>
+	<!-- 1646 --><td></td>
+	<!-- 1707-1783 --><td></td>
+	<!-- 1763 --><td></td>
+	<!-- today --><td></td>
+</tr>
+<tr class="minor-row">
+	<th>
+		<p style="margin-left:25px">multiplication</p>
+	</th>
+	<!--2600-1801 BC --><td><a href="./rhind.html#multiplication">Rhind</a>: (Egypt)</td>
+	<!--1830-1531 BC --><td></td>
+	<!-- 1000 BC - 100 BC --><td></td>
+	<!--570-495 BC --><td></td>
+	<!--480-411 BC --><td></td>
+	<!-- 408-355 BC --><td></td>
+	<!-- 300 BC --><td></span></td>
+	<!-- 287-212 BC --><td></span></td>
+	<!-- 200 BC --><td></span></td>
+	<!-- 3 BC - 2 AD --><td></span></td>
+	<!-- 200-300 --><td></span></td>
+	<!-- 225-295 --><td></span></td>
+	<!-- 600 --><td></span></td>
+	<!-- 800-1000 --><td></td>
+	<!-- 900-1000 --><td></td>
+	<!-- 1202 --><td></span></td>
+	<!-- 1646 --><td></td>
+	<!-- 1707-1783 --><td></td>
+	<!-- 1763 --><td></td>
+	<!-- today --><td></td>
+</tr>
+<tr class="minor-row">
+	<th>
+		<p style="margin-left:25px">division</p>
+	</th>
+	<!--2600-1801 BC --><td><a href="./rhind.html#division">Rhind</a>: (Egypt)</td>
+	<!--1830-1531 BC --><td></td>
+	<!-- 1000 BC - 100 BC --><td></td>
+	<!--570-495 BC --><td></td>
+	<!--480-411 BC --><td></td>
+	<!-- 408-355 BC --><td></td>
+	<!-- 300 BC --><td></span></td>
+	<!-- 287-212 BC --><td></span></td>
+	<!-- 200 BC --><td></span></td>
+	<!-- 3 BC - 2 AD --><td></span></td>
+	<!-- 200-300 --><td></span></td>
+	<!-- 225-295 --><td></span></td>
+	<!-- 600 --><td></span></td>
+	<!-- 800-1000 --><td></td>
+	<!-- 900-1000 --><td></td>
+	<!-- 1202 --><td></span></td>
+	<!-- 1646 --><td></td>
+	<!-- 1707-1783 --><td></td>
+	<!-- 1763 --><td></td>
+	<!-- today --><td></td>
+</tr>
+<tr class="minor-row">
+	<th>
+		<p style="margin-left:25px">techniques:</p>
+	</th>
+	<!--2600-1801 BC --><td></td>
+	<!--1830-1531 BC --><td></td>
+	<!-- 1000 BC - 100 BC --><td></td>
+	<!--570-495 BC --><td></td>
+	<!--480-411 BC --><td></td>
+	<!-- 408-355 BC --><td></td>
+	<!-- 300 BC --><td></span></td>
+	<!-- 287-212 BC --><td></span></td>
+	<!-- 200 BC --><td></span></td>
+	<!-- 3 BC - 2 AD --><td></span></td>
+	<!-- 200-300 --><td></span></td>
+	<!-- 225-295 --><td></span></td>
+	<!-- 600 --><td></td>
+	<!-- 800-1000 --><td></td>
+	<!-- 900-1000 --><td></td>
+	<!-- 1202 --><td></span></td>
+	<!-- 1646 --><td></td>
+	<!-- 1707-1783 --><td></td>
+	<!-- 1763 --><td></td>
+	<!-- today --><td></td>
+</tr>
+<tr class="minor-row">
+	<th>
+		<p style="margin-left:50px"><a id="applyFractionsToaNumber">apply fraction to a number</a> <a href=#applyFractionToANumber>[4]</a></p>
+	</th>
+	<!--2600-1801 BC --><td><a href="./rhind.html#problem21">Rhind</a> (Egypt)</td>
+	<!--1830-1531 BC --><td></td>5
+	<!-- 1000 BC - 100 BC --><td></td>
+	<!--570-495 BC --><td></td>
+	<!--480-411 BC --><td></td>
+	<!-- 408-355 BC --><td></td>
+	<!-- 300 BC --><td></span></td>
+	<!-- 287-212 BC --><td></span></td>
+	<!-- 200 BC --><td></span></td>
+	<!-- 3 BC - 2 AD --><td></span></td>
+	<!-- 200-300 --><td></span></td>
+	<!-- 225-295 --><td></span></td>
+	<!-- 600 --><td>Akhmim (Greece) <a href=#applyToANumberAkhmim>[5]</a></span></td>
+	<!-- 800-1000 --><td></td>
+	<!-- 900-1000 --><td></td>
+	<!-- 1202 --><td></span></td>
+	<!-- 1646 --><td></td>
+	<!-- 1707-1783 --><td></td>
+	<!-- 1763 --><td></td>
+	<!-- today --><td>solve general problem for a specific number<a href=#toANumberToday>[6]</a></td>
+</tr>
+<tr class="minor-row">
+	<th>
+		<p style="margin-left:50px"><a href="./falsePosition.html">false position</a> (precursor to <a href="./algebra.html">algebra</a> <a href=#falsePositionAlgebra>[7])</a></p>
+	</th>
+	<!--2600-1801 BC --><td><a href="./rhind.html#falsePosition">Rhind</a> (Egypt) <a href=#falsePosition>[8]</a> </td>
+	<!--1830-1531 BC --><td>Babylon <a href=#falsePositionBabylon>[9]</a></td>
+	<!-- 1000 BC - 100 BC --><td></td>
+	<!--570-495 BC --><td></td>
+	<!--480-411 BC --><td></td>
+	<!-- 408-355 BC --><td></td>
+	<!-- 300 BC --><td></td>
+	<!-- 287-212 BC --><td></td>
+	<!-- 200 BC --><td></td>
+	<!-- 3 BC - 2 AD --><td></span></td>
+	<!-- 200-300 --><td>Diophantus (Greece) <a href=#falsePositionDiophantus>[10]</a></td>
+	<!-- 225-295 --><td></span></td>
+	<!-- 600 --><td></td>
+	<!-- 800-1000 --><td></td>
+	<!-- 900-1000 --><td></td>
+	<!-- 1202 --><td></span></td>
+	<!-- 1646 --><td></td>
+	<!-- 1707-1783 --><td></td>
+	<!-- 1763 --><td></td>
+	<!-- today --><td></td>
+</tr>
+<tr class="minor-row">
+	<th>
+		<p style="margin-left:75px">double false position (2 unknowns)<a href=#doubleFalsePosition></a></p>
+	</th>
+	<!--2600-1801 BC --><td><a href="./rhind.html#problem40">Rhind: (Egypt)</a> <a href="#falsePositionProblem40">[11]</a></td>
+	<!--1830-1531 BC --><td></td>
+	<!-- 1000 BC - 100 BC--><td>The Nine Chapters on the Mathematics of Art (China) <a href=#falsePositionChina>[12]</a></td>
+	<!--570-495 BC --><td></td>
+	<!--480-411 BC --><td></td>
+	<!-- 408-355 BC --><td></td>
+	<!-- 300 BC --><td></span></td>
+	<!-- 287-212 BC --><td></span></td>
+	<!-- 200 BC --><td></span></td>
+	<!-- 3 BC - 2 AD --><td></span></td>
+	<!-- 200-300 --><td></td>
+	<!-- 225-295 --><td></span></td>
+	<!-- 600 --><td></td>
+	<!-- 800-1000 --><td>Book of the Two Errors - Abu Kamil (Egypt) <a href=#falsePositionKamil>[13]</a></td>
+	<!-- 900-1000 --><td>Qusta ibn Luqa (Arabia) <a href=#falsePositionArabia>[14]</a></td>
+	<!-- 1202 --><td>Liber Abaci Fibonacci (Italy) <a href=#falsePositionFibonacci>[15]</a></td>
+	<!-- 1646 --><td></td>
+	<!-- 1707-1783 --><td></td>
+	<!-- 1763 --><td></td>
+	<!-- today --><td></td>
+</tr>
+<tr class="minor-row">
+	<th>
+		<p style="margin-left:25px">concepts:</p>
+	</th>
+	<!--2600-1801 BC --><td></td>
+	<!--1830-1531 BC --><td></td>
+	<!-- 1000 BC - 100 BC --><td></td>
+	<!--570-495 BC --><td></td>
+	<!--480-411 BC --><td></td>
+	<!-- 408-355 BC --><td></td>
+	<!-- 300 BC --><td></span></td>
+	<!-- 287-212 BC --><td></span></td>
+	<!-- 200 BC --><td></span></td>
+	<!-- 3 BC - 2 AD --><td></span></td>
+	<!-- 200-300 --><td></span></td>
+	<!-- 225-295 --><td></span></td>
+	<!-- 600 --><td></td>
+	<!-- 800-1000 --><td></td>
+	<!-- 900-1000 --><td></td>
+	<!-- 1202 --><td></span></td>
+	<!-- 1646 --><td></td>
+	<!-- 1707-1783 --><td></td>
+	<!-- 1763 --><td></td>
+	<!-- today --><td></td>
+</tr>
+<tr class="minor-row">
+	<th>
+		<p style="margin-left:50px">transitivity (if a=b and b=c then a=c)</p>
+	</th>
+	<!--2600-1801 BC --><td><a href="./rhind.html#2DividedBy">Rhind</a>: (Egypt)</td>
+	<!--1830-1531 BC --><td></td>
+	<!-- 1000 BC - 100 BC --><td></td>
+	<!--570-495 BC --><td></td>
+	<!--480-411 BC --><td></td>
+	<!-- 408-355 BC --><td></td>
+	<!-- 300 BC --><td></span></td>
+	<!-- 287-212 BC --><td></span></td>
+	<!-- 200 BC --><td></span></td>
+	<!-- 3 BC - 2 AD --><td></span></td>
+	<!-- 200-300 --><td></span></td>
+	<!-- 225-295 --><td></span></td>
+	<!-- 600 --><td></span></td>
+	<!-- 800-1000 --><td></td>
+	<!-- 900-1000 --><td></td>
+	<!-- 1202 --><td></span></td>
+	<!-- 1646 --><td></td>
+	<!-- 1707-1783 --><td></td>
+	<!-- 1763 --><td></td>
+	<!-- today --><td></td>
+</tr>
+<tr class="minor-row">
+	<th>
+		<p style="margin-left:50px">arithmetic progression</p>
+	</th>
+	<!--2600-1801 BC --><td><a href="./rhind.html#arithmeticProgression">Rhind:</a> (Egypt)</td>
+	<!--1830-1531 BC --><td></td>
+	<!-- 1000 BC - 100 BC --><td></td>
+	<!--570-495 BC --><td></td>
+	<!--480-411 BC --><td></td>
+	<!-- 408-355 BC --><td></td>
+	<!-- 300 BC --><td></span></td>
+	<!-- 287-212 BC --><td></span></td>
+	<!-- 200 BC --><td></span></td>
+	<!-- 3 BC - 2 AD --><td></span></td>
+	<!-- 200-300 --><td></span></td>
+	<!-- 225-295 --><td></span></td>
+	<!-- 600 --><td></span></td>
+	<!-- 800-1000 --><td></td>
+	<!-- 900-1000 --><td></td>
+	<!-- 1202 --><td></span></td>
+	<!-- 1646 --><td></td>
+	<!-- 1707-1783 --><td></td>
+	<!-- 1763 --><td></td>
+	<!-- today --><td></td>
+</tr>
+<tr class="minor-row">
+	<th>
+		<p style="margin-left:50px">geometric series</p>
+	</th>
+	<!--2600-1801 BC --><td><a href="./rhind.html#geometricSeries">Rhind:</a> (Egypt)</td>
+	<!--1830-1531 BC --><td></td>
+	<!-- 1000 BC - 100 BC --><td></td>
+	<!--570-495 BC --><td></td>
+	<!--480-411 BC --><td></td>
+	<!-- 408-355 BC --><td></td>
+	<!-- 300 BC --><td></span></td>
+	<!-- 287-212 BC --><td></span></td>
+	<!-- 200 BC --><td></span></td>
+	<!-- 3 BC - 2 AD --><td></span></td>
+	<!-- 200-300 --><td></span></td>
+	<!-- 225-295 --><td></span></td>
+	<!-- 600 --><td></span></td>
+	<!-- 800-1000 --><td></td>
+	<!-- 900-1000 --><td></td>
+	<!-- 1202 --><td></span></td>
+	<!-- 1646 --><td></td>
+	<!-- 1707-1783 --><td></td>
+	<!-- 1763 --><td></td>
+	<!-- today --><td></td>
+</tr>
+<tr class="minor-row">
+	<th>
+		<p style="margin-left:75px">Fibonacci</p>
+	</th>
+	<!--2600-1801 BC --><td></td>
+	<!--1830-1531 BC --><td></td>
+	<!-- 1000 BC - 100 BC --><td></td>
+	<!--570-495 BC --><td></td>
+	<!--480-411 BC --><td></td>
+	<!-- 408-355 BC --><td></td>
+	<!-- 300 BC --><td></td>
+	<!-- 287-212 BC --><td></td>
+	<!-- 200 BC --><td>Pingala</td>
+	<!-- 3 BC - 2 AD --><td></span></td>
+	<!-- 200-300 --><td></span></td>
+	<!-- 225-295 --><td></span></td>
+	<!-- 600 --><td></span></td>
+	<!-- 800-1000 --><td></td>
+	<!-- 900-1000 --><td></td>
+	<!-- 1202 --><td>Liber Abaci: Fibonacci (Italy)</td>
+	<!-- 1646 --><td></td>
+	<!-- 1707-1783 --><td></td>
+	<!-- 1763 --><td></td>
+	<!-- today --><td></td>
+</tr>
+<tr class="major-row">
+	<th>Geometry:</th>
+	<!--2600-1801 BC --><td><a href="./rhind.html#geometry">Rhind:</a> (Egypt)</td>
+	<!--1830-1531 BC --><td></td>
+	<!-- 1000 BC - 100 BC --><td></td>
+	<!--570-495 BC --><td></td>
+	<!--480-411 BC --><td></td>
+	<!-- 408-355 BC --><td></td>
+	<!-- 300 BC --><td><a href="./EuclidsElements.html">Elements: Euclid</a></td>
+	<!-- 287-212 BC --><td></span></td>
+	<!-- 200 BC --><td></span></td>
+	<!-- 3 BC - 2 AD --><td></span></td>
+	<!-- 200-300 --><td></span></td>
+	<!-- 225-295 --><td></span></td>
+	<!-- 600 --><td></span></td>
+	<!-- 800-1000 --><td></td>
+	<!-- 900-1000 --><td></td>
+	<!-- 1202 --><td></span></td>
+	<!-- 1646 --><td></td>
+	<!-- 1707-1783 --><td></td>
+	<!-- 1763 --><td></td>
+	<!-- today --><td></td>
+</tr>
+<tr class="minor-row">
+	<th>
+		<p style="margin-left:25px"><a href="./unitsOfMeasure.html">units of measurement</a></p>
+	</th>
+	<!--2600-1801 BC --><td><a href="./unitsOfMeasure.html">Rhind</a>: (Egypt)</td>
+	<!--1830-1531 BC --><td></td>
+	<!-- 1000 BC - 100 BC --><td></td>
+	<!--570-495 BC --><td></td>
+	<!--480-411 BC --><td></td>
+	<!-- 408-355 BC --><td></td>
+	<!-- 300 BC --><td></span></td>
+	<!-- 287-212 BC --><td></span></td>
+	<!-- 200 BC --><td></span></td>
+	<!-- 3 BC - 2 AD --><td></span></td>
+	<!-- 200-300 --><td></span></td>
+	<!-- 225-295 --><td></span></td>
+	<!-- 600 --><td></span></td>
+	<!-- 800-1000 --><td></td>
+	<!-- 900-1000 --><td></td>
+	<!-- 1202 --><td></span></td>
+	<!-- 1646 --><td></td>
+	<!-- 1707-1783 --><td></td>
+	<!-- 1763 --><td></td>
+	<!-- today --><td></td>
+</tr>
+<tr class="minor-row">
+	<th>
+		<p style="margin-left:25px">ratio of sides of <a href="./triangle.html">triangle</a></p>
+	</th>
+	<!--2600-1801 BC --><td><a href="rhind.html#pyramids">Rhind</a>: (Egypt)</td>
+	<!--1830-1531 BC --><td></td>
+	<!-- 1000 BC - 100 BC --><td></td>
+	<!--570-495 BC --><td></td>
+	<!--480-411 BC --><td></td>
+	<!-- 408-355 BC --><td></td>
+	<!-- 300 BC --><td></td>
+	<!-- 287-212 BC --><td></td>
+	<!-- 200 BC --><td></td>
+	<!-- 3 BC - 2 AD --><td></td>
+	<!-- 200-300 --><td></td>
+	<!-- 225-295 --><td></span></td>
+	<!-- 600 --><td></td>
+	<!-- 800-1000 --><td></td>
+	<!-- 900-1000 --><td></td>
+	<!-- 1202 --><td></td>
+	<!-- 1646 --><td></td>
+	<!-- 1707-1783 --><td></td>
+	<!-- 1763 --><td></td>
+	<!-- today --><td></td>
+</tr>
+<tr class="minor-row">
+	<th>
+		<p style="margin-left:50px"><a href="./pythagorus.html">Pythagorean Theorem</a></p>
+	</th>
+	<!--2600-1801 BC --><td></td>
+	<!--1830-1531 BC --><td></td>
+	<!-- 1000 BC - 100 BC --><td></td>
+	<!--570-495 BC --><td>Pythagorus</td>
+	<!--480-411 BC --><td></td>
+	<!-- 408-355 BC --><td></td>
+	<!-- 300 BC --><td></td>
+	<!-- 287-212 BC --><td></td>
+	<!-- 200 BC --><td></td>
+	<!-- 3 BC - 2 AD --><td>Egypt<a href=#PythagorusEgypt>[18]</a></td>
+	<!-- 200-300 --><td></td>
+	<!-- 225-295 --><td></span></td>
+	<!-- 600 --><td></td>
+	<!-- 800-1000 --><td></td>
+	<!-- 900-1000 --><td></td>
+	<!-- 1202 --><td></td>
+	<!-- 1646 --><td></td>
+	<!-- 1707-1783 --><td></td>
+	<!-- 1763 --><td></td>
+	<!-- today --><td></td>
+</tr>
+<tr class="minor-row">
+	<th>
+		<p style="margin-left:25px">area</p>
+	</th>
+	<!--2600-1801 BC --><td><a href="./rhind.html#area">Rhind</a>: (Egypt)</td>
+	<!--1830-1531 BC --><td></td>
+	<!-- 1000 BC - 100 BC --><td></td>
+	<!--570-495 BC --><td></td>
+	<!--480-411 BC --><td></td>
+	<!-- 408-355 BC --><td></td>
+	<!-- 300 BC --><td></span></td>
+	<!-- 287-212 BC --><td></span></td>
+	<!-- 200 BC --><td></span></td>
+	<!-- 3 BC - 2 AD --><td></span></td>
+	<!-- 200-300 --><td></span></td>
+	<!-- 225-295 --><td></span></td>
+	<!-- 600 --><td></span></td>
+	<!-- 800-1000 --><td></td>
+	<!-- 900-1000 --><td></td>
+	<!-- 1202 --><td></span></td>
+	<!-- 1646 --><td></td>
+	<!-- 1707-1783 --><td></td>
+	<!-- 1763 --><td></td>
+	<!-- today --><td></td>
+</tr>
+<tr class="minor-row">
+	<th>
+		<p style="margin-left:50px"><a href="./areaOfCircle.html">circle</a></p>
+	</th>
+	<!--2600-1801 BC --><td><a href="./rhind.html#areaOfCircle">Rhind</a>: (Egypt)</td>
+	<!--1830-1531 BC --><td></td>
+	<!-- 1000 BC - 100 BC --><td></td>
+	<!--570-495 BC --><td></td>
+	<!--480-411 BC --><td></td>
+	<!-- 408-355 BC --><td></td>
+	<!-- 300 BC --><td></span></td>
+	<!-- 287-212 BC --><td></span></td>
+	<!-- 200 BC --><td></span></td>
+	<!-- 3 BC - 2 AD --><td></span></td>
+	<!-- 200-300 --><td></span></td>
+	<!-- 225-295 --><td></span></td>
+	<!-- 600 --><td></span></td>
+	<!-- 800-1000 --><td></td>
+	<!-- 900-1000 --><td></td>
+	<!-- 1202 --><td></span></td>
+	<!-- 1646 --><td></td>
+	<!-- 1707-1783 --><td></td>
+	<!-- 1763 --><td></td>
+	<!-- today --><td></td>
+</tr>
+<tr class="minor-row">
+	<th>
+		<p style="margin-left:50px"><a href="./surfaceArea.html">surface</a></p>
+	</th>
+	<!--2600-1801 BC --><td></td>
+	<!--1830-1531 BC --><td></td>
+	<!-- 1000 BC - 100 BC --><td></td>
+	<!--570-495 BC --><td></td>
+	<!--480-411 BC --><td></td>
+	<!-- 408-355 BC --><td></td>
+	<!-- 300 BC --><td></span></td>
+	<!-- 287-212 BC --><td></span></td>
+	<!-- 200 BC --><td></span></td>
+	<!-- 3 BC - 2 AD --><td></span></td>
+	<!-- 200-300 --><td></span></td>
+	<!-- 225-295 --><td></span></td>
+	<!-- 600 --><td></span></td>
+	<!-- 800-1000 --><td></td>
+	<!-- 900-1000 --><td></td>
+	<!-- 1202 --><td></span></td>
+	<!-- 1646 --><td></td>
+	<!-- 1707-1783 --><td></td>
+	<!-- 1763 --><td></td>
+	<!-- today --><td></td>
+</tr>
+<tr class="minor-row">
+	<th>
+		<p style="margin-left:75px"><a href="./surfaceArea.html#hemisphere">hemisphere</a></p>
+	</th>
+	<!--2600-1801 BC --><td><a href="./surfaceArea.html#egypt">Moscow</a>: (Egypt)<a href=#hemiSphereEgypt>[16]</a></td>
+	<!--1830-1531 BC --><td></td>
+	<!-- 1000 BC - 100 BC --><td></td>
+	<!--570-495 BC --><td></td>
+	<!--480-411 BC --><td></td>
+	<!-- 408-355 BC --><td></td>
+	<!-- 300 BC --><td></span></td>
+	<!-- 287-212 BC --><td></span></td>
+	<!-- 200 BC --><td></span></td>
+	<!-- 3 BC - 2 AD --><td></span></td>
+	<!-- 200-300 --><td></span></td>
+	<!-- 225-295 --><td></span></td>
+	<!-- 600 --><td></span></td>
+	<!-- 800-1000 --><td></td>
+	<!-- 900-1000 --><td></td>
+	<!-- 1202 --><td></span></td>
+	<!-- 1646 --><td></td>
+	<!-- 1707-1783 --><td></td>
+	<!-- 1763 --><td></td>
+	<!-- today --><td></td>
+</tr>
+<tr class="minor-row">
+	<th>
+		<p style="margin-left:25px">volume</p>
+	</th>
+	<!--2600-1801 BC --><td><a href="./rhind.html#volume">Rhind</a>: (Egypt)</td>
+	<!--1830-1531 BC --><td></td>
+	<!-- 1000 BC - 100 BC --><td></td>
+	<!--570-495 BC --><td></td>
+	<!--480-411 BC --><td></td>
+	<!-- 408-355 BC --><td></td>
+	<!-- 300 BC --><td></span></td>
+	<!-- 287-212 BC --><td></span></td>
+	<!-- 200 BC --><td></span></td>
+	<!-- 3 BC - 2 AD --><td></span></td>
+	<!-- 200-300 --><td></span></td>
+	<!-- 225-295 --><td></span></td>
+	<!-- 600 --><td></span></td>
+	<!-- 800-1000 --><td></td>
+	<!-- 900-1000 --><td></td>
+	<!-- 1202 --><td></span></td>
+	<!-- 1646 --><td></td>
+	<!-- 1707-1783 --><td></td>
+	<!-- 1763 --><td></td>
+	<!-- today --><td></td>
+</tr>
+<tr class="minor-row">
+	<th>
+		<p style="margin-left:50px">truncated <a href="./pyramid.html">pyramid</a></p>
+	</th>
+	<!--2600-1801 BC --><td><a href="./pyramid.html#Egypt">Moscow: (Egypt)<a href=#truncEgypt>[17]</a></a></td>
+	<!--1830-1531 BC --><td></td>
+	<!-- 1000 BC - 100 BC--><td><a href="./pyramid.html#truncPyramidNineChapters">The Nine Chapters on the Mathematics of Art (China)</a> <a href=#trunc>[18]</a></td>
+	<!--570-495 BC --><td></td>
+	<!--480-411 BC --><td></td>
+	<!-- 408-355 BC --><td></td>
+	<!-- 300 BC --><td></td>
+	<!-- 287-212 BC --><td></td>
+	<!-- 200 BC --><td></td>
+	<!-- 3 BC - 2 AD --><td>Egypt<a href=#PythagorusEgypt>[19]</a></td>
+	<!-- 200-300 --><td></td>
+	<!-- 225-295 --><td><a href="./pyramid.html#truncPyramidNineChapters">Liu Hui (China)</a></span></td>
+	<!-- 600 --><td></td>
+	<!-- 800-1000 --><td></td>
+	<!-- 900-1000 --><td></td>
+	<!-- 1202 --><td></td>
+	<!-- 1646 --><td></td>
+	<!-- 1707-1783 --><td></td>
+	<!-- 1763 --><td></td>
+	<!-- today --><td></td>
+</tr>
+<tr class="minor-row">
+	<th>
+		<p style="margin-left:50px"><a href="./volumeSphere.html">sphere</a></p>
+	</th>
+	<!--2600-1801 BC --><td></a></td>
+	<!--1830-1531 BC --><td></td>
+	<!-- 1000 BC - 100 BC--><td></td>
+	<!--570-495 BC --><td></td>
+	<!--480-411 BC --><td></td>
+	<!-- 408-355 BC --><td></td>
+	<!-- 300 BC --><td></td>
+	<!-- 287-212 BC --><td></td>
+	<!-- 200 BC --><td></td>
+	<!-- 3 BC - 2 AD --><td></td>
+	<!-- 200-300 --><td></td>
+	<!-- 225-295 --><td></td>
+	<!-- 600 --><td></td>
+	<!-- 800-1000 --><td></td>
+	<!-- 900-1000 --><td></td>
+	<!-- 1202 --><td></td>
+	<!-- 1646 --><td></td>
+	<!-- 1707-1783 --><td></td>
+	<!-- 1763 --><td></td>
+	<!-- today --><td></td>
+</tr>
+<tr class="major-row">
+	<th><a href="./algebra.html">Algebra</a>:</th>
+	<!--2600-1801 BC --><td><a href="./rhind.html#quantityProblems">Rhind:</a> (Egypt) <a href=#algebraEgypt>[20]</a></td>
+	<!--1830-1531 BC --><td></td>
+	<!-- 1000 BC - 100 BC --><td></td>
+	<!--570-495 BC --><td></td>
+	<!--480-411 BC --><td></td>
+	<!-- 408-355 BC --><td></td>
+	<!-- 300 BC --><td></span></td>
+	<!-- 287-212 BC --><td></span></td>
+	<!-- 200 BC --><td></span></td>
+	<!-- 3 BC - 2 AD --><td></span></td>
+	<!-- 200-300 --><td></span></td>
+	<!-- 225-295 --><td></span></td>
+	<!-- 600 --><td></span></td>
+	<!-- 800-1000 --><td></td>
+	<!-- 900-1000 --><td></td>
+	<!-- 1202 --><td></span></td>
+	<!-- 1646 --><td></td>
+	<!-- 1707-1783 --><td></td>
+	<!-- 1763 --><td></td>
+	<!-- today --><td></td>
+</tr>
+<tr class="minor-row">
+	<th>
+		<p style="margin-left:25px">Linear Algebra</p>
+	</th>
+	<!--2600-1801 BC --><td></td>
+	<!--1830-1531 BC --><td></td>
+	<!-- 1000 BC - 100 BC --><td></td>
+	<!--570-495 BC --><td></td>
+	<!--480-411 BC --><td></td>
+	<!-- 408-355 BC --><td></td>
+	<!-- 300 BC --><td></span></td>
+	<!-- 287-212 BC --><td></span></td>
+	<!-- 200 BC --><td></span></td>
+	<!-- 3 BC - 2 AD --><td></span></td>
+	<!-- 200-300 --><td></span></td>
+	<!-- 225-295 --><td></span></td>
+	<!-- 600 --><td></span></td>
+	<!-- 800-1000 --><td></td>
+	<!-- 900-1000 --><td></td>
+	<!-- 1202 --><td></span></td>
+	<!-- 1646 --><td></td>
+	<!-- 1707-1783 --><td></td>
+	<!-- 1763 --><td></td>
+	<!-- today --><td></td>
+</tr>
+<tr class="major-row">
+	<th><a href="./trig.html">Trigonometry</a>:</th>
+	<!--2600-1801 BC --><td></td>
+	<!--1830-1531 BC --><td></td>
+	<!-- 1000 BC - 100 BC --><td></td>
+	<!--570-495 BC --><td></td>
+	<!--480-411 BC --><td></td>
+	<!-- 408-355 BC --><td></td>
+	<!-- 300 BC --><td></td>
+	<!-- 287-212 BC --><td></td>
+	<!-- 200 BC --><td></td>
+	<!-- 3 BC - 2 AD --><td></span></td>
+	<!-- 200-300 --><td></span></td>
+	<!-- 225-295 --><td></span></td>
+	<!-- 600 --><td></span></td>
+	<!-- 800-1000 --><td></td>
+	<!-- 900-1000 --><td></td>
+	<!-- 1202 --><td></td>
+	<!-- 1646 --><td></td>
+	<!-- 1707-1783 --><td></td>
+	<!-- 1763 --><td></td>
+	<!-- today --><td></td>
+</tr>
+<tr class="major-row">
+	<th><a href="./calculus.html">Calculus</a>:</th>
+	<!--2600-1801 BC --><td></td>
+	<!--1830-1531 BC --><td></td>
+	<!-- 1000 BC - 100 BC --><td></td>
+	<!--570-495 BC --><td></td>
+	<!--480-411 BC --><td></td>
+	<!-- 408-355 BC --><td></td>
+	<!-- 300 BC --><td></td>
+	<!-- 287-212 BC --><td></td>
+	<!-- 200 BC --><td></td>
+	<!-- 3 BC - 2 AD --><td></span></td>
+	<!-- 200-300 --><td></span></td>
+	<!-- 225-295 --><td></span></td>
+	<!-- 600 --><td></span></td>
+	<!-- 800-1000 --><td></td>
+	<!-- 900-1000 --><td></td>
+	<!-- 1202 --><td></td>
+	<!-- 1646 --><td>Leibniz</td>
+	<!-- 1707-1783 --><td></td>
+	<!-- 1763 --><td></td>
+	<!-- today --><td></td>
+</tr>
+<tr class="minor-row">
+	<th>
+		<p style="margin-left:25px">Method of Exhaustion</p>
+	</th>
+	<!--2600-1801 BC --><td></td>
+	<!--1830-1531 BC --><td></td>
+	<!-- 1000 BC - 100 BC --><td></td>
+	<!--570-495 BC --><td></td>
+	<!--480-411 BC --><td>Aniphon</td>
+	<!-- 408-355 BC --><td>Eudoxus</td>
+	<!-- 300 BC --><td></td>
+	<!-- 287-212 BC --><td>Archemedes</td>
+	<!-- 200 BC --><td></td>
+	<!-- 3 BC - 2 AD --><td></span></td>
+	<!-- 200-300 --><td></span></td>
+	<!-- 225-295 --><td></span></td>
+	<!-- 600 --><td></span></td>
+	<!-- 800-1000 --><td></td>
+	<!-- 900-1000 --><td></td>
+	<!-- 1202 --><td></td>
+	<!-- 1646 --><td></td>
+	<!-- 1707-1783 --><td>Euler</td>
+	<!-- 1763 --><td></td>
+	<!-- today --><td></td>
+</tr>
+<tr class="major-row">
+	<th>Combinatorics:</th>
+	<!--2600-1801 BC --><td></td>
+	<!--1830-1531 BC --><td></td>
+	<!-- 1000 BC - 100 BC --><td></td>
+	<!--570-495 BC --><td></td>
+	<!--480-411 BC --><td></td>
+	<!-- 408-355 BC --><td></td>
+	<!-- 300 BC --><td></td>
+	<!-- 287-212 BC --><td></td>
+	<!-- 200 BC --><td>Pingala</td>
+	<!-- 3 BC - 2 AD --><td></span></td>
+	<!-- 200-300 --><td></span></td>
+	<!-- 225-295 --><td></span></td>
+	<!-- 600 --><td></span></td>
+	<!-- 800-1000 --><td></td>
+	<!-- 900-1000 --><td></td>
+	<!-- 1202 --><td></td>
+	<!-- 1646 --><td></td>
+	<!-- 1707-1783 --><td></td>
+	<!-- 1763 --><td></td>
+	<!-- today --><td></td>
+</tr>
+<tr class="major-row">
+	<th>Probability</th>
+	<!--2600-1801 BC --><td></td>
+	<!--1830-1531 BC --><td></td>
+	<!-- 1000 BC - 100 BC --><td></td>
+	<!--570-495 BC --><td></td>
+	<!--480-411 BC --><td></td>
+	<!-- 408-355 BC --><td></td>
+	<!-- 300 BC --><td></td>
+	<!-- 287-212 BC --><td></td>
+	<!-- 200 BC --><td>Pingala</td>
+	<!-- 3 BC - 2 AD --><td></span></td>
+	<!-- 200-300 --><td></span></td>
+	<!-- 225-295 --><td></span></td>
+	<!-- 600 --><td></span></td>
+	<!-- 800-1000 --><td></td>
+	<!-- 900-1000 --><td></td>
+	<!-- 1202 --><td></td>
+	<!-- 1646 --><td></td>
+	<!-- 1707-1783 --><td></td>
+	<!-- 1763 --><td></td>
+	<!-- today --><td></td>
+</tr>
+<tr class="minor-row">
+	<th>
+		<p style="margin-left:25px">Bayes Theorem</p>
+	</th>
+	<!--2600-1801 BC --><td></td>
+	<!--1830-1531 BC --><td></td>
+	<!-- 1000 BC - 100 BC --><td></td>
+	<!--570-495 BC --><td></td>
+	<!--480-411 BC --><td></td>
+	<!-- 408-355 BC --><td></td>
+	<!-- 300 BC --><td></td>
+	<!-- 287-212 BC --><td></td>
+	<!-- 200 BC --><td></td>
+	<!-- 3 BC - 2 AD --><td></span></td>
+	<!-- 200-300 --><td></span></td>
+	<!-- 225-295 --><td></span></td>
+	<!-- 600 --><td></span></td>
+	<!-- 800-1000 --><td></td>
+	<!-- 900-1000 --><td></td>
+	<!-- 1202 --><td></td>
+	<!-- 1646 --><td></td>
+	<!-- 1707-1783 --><td></td>
+	<!-- 1763 --><td><a href="./bayesTheorem.html">Bayes</a> (England)</td>
+	<!-- today --><td></td>
+</tr>
+</tbody>
+</table>
+</div>
+<script>
+function myFunction() {
+	// Declare variables
+	var input, filter, table, tr, th, td, c, r, txtValue, found, displaySetting;
+	input = document.getElementById("myInput");
+	filter = input.value.toUpperCase();
+	table = document.getElementById("myTable");
+	tr = table.getElementsByTagName("tr");
+
+  	if (filter != "")
+  	{
+  		// Loop through all table columns, and hide those who don't match the search query
+  		for (c = 0; c <= 20; c++) {
+			found = 0;
+    			for (r=1; r < tr.length ; r++) {
+      				td = tr[r].getElementsByTagName("td")[c];
+      				if (td) {
+            				txtValue = td.textContent || td.innerText;
+            				if (txtValue.toUpperCase().indexOf(filter) > -1) {
+						found = 1;
+          				} 
+       				}	
+    			}		
+			if (found == 1) {
+	        		displaySetting = "";
+			}
+			else {
+	        		displaySetting = "none";
+			}
+    			for (r=0; r < tr.length ; r++) {
+      				td = tr[r].getElementsByTagName("td")[c];
+	        		td.style.display = displaySetting;
+			}
+		}
+  	} 
+	else {
+	 	// Unhide columns
+  		for (c = 0; c <= 18; c++) {
+    			for (r=0; r < tr.length ; r++) {
+      				td = tr[r].getElementsByTagName("td")[c];
+	        		td.style.display = "";
+			}
+		}
+        }
+}
+</script>
+<h1>References</h1>
+<p><a id="reciprocalFractions">[1]</a>Chace, Arnold Buffum. The Rhind Mathematical Papyrus. The National Council of Teachers of Mathematics,1968:6.</p>
+<p><a id="otherThan1">[2]</a>Chace, Arnold Buffum. The Rhind Mathematical Papyrus. The National Council of Teachers of Mathematics,1968:ix.</p>
+<p><a id="approxSquareRoots">[3]</a>Chace, Arnold Buffum. The Rhind Mathematical Papyrus. The National Council of Teachers of Mathematics,1968:ix.</p>
+<p><a id="applyFractionToANumber">[4]</a>Chace, Arnold Buffum. The Rhind Mathematical Papyrus. The National Council of Teachers of Mathematics,1968:6.</p>
+<p><a id="applyToANumberAkhmim">[5]</a>Chace, Arnold Buffum. The Rhind Mathematical Papyrus. The National Council of Teachers of Mathematics,1968:7.</p>
+<p><a id="toANumberToday">[6]]</a>Chace, Arnold Buffum. The Rhind Mathematical Papyrus. The National Council of Teachers of Mathematics,1968:8.</p>
+<p><a id="falsePositionAlgebra">[7]</a>Chace, Arnold Buffum. The Rhind Mathematical Papyrus. The National Council of Teachers of Mathematics,1968:9.</p>
+<p><a id="falsePosition">[8]</a>Chace, Arnold Buffum. The Rhind Mathematical Papyrus. The National Council of Teachers of Mathematics,1968:8.</p>
+<p><a id="falsePositionBabylon">[9]</a>Wikipedia contributors. Regula falsi. Wikipedia, The Free Encyclopedia. November 3, 2023, 09:25 UTC. Available at: https://en.wikipedia.org/w/index.php?title=Regula_falsi&oldid=1183280567. Accessed December 29, 2023.</p>
+<p><a id="falsePositionDiophantus">[10]</a>Chace, Arnold Buffum. The Rhind Mathematical Papyrus. The National Council of Teachers of Mathematics,1968:9.</p>
+<p><a id="falsePositionProblem40">[11]</a>Chace, Arnold Buffum. The Rhind Mathematical Papyrus. The National Council of Teachers of Mathematics,1968:p.9</p>
+<p><a id="falsePositionChina">[12]</a>Wikipedia contributors. The Nine Chapters on the Mathematical Art. Wikipedia, The Free Encyclopedia. December 26, 2023, 02:56 UTC. Available at: <a href="https://en.wikipedia.org/w/index.php?title=The_Nine_Chapters_on_the_Mathematical_Art&oldid=1191832900">https://en.wikipedia.org/w/index.php?title=The_Nine_Chapters_on_the_Mathematical_Art&oldid=1191832900"</a>. Accessed December 29, 2023.</p>
+<p><a id="falsePositionKamil">[13]</a>Wikipedia contributors. Regula falsi. Wikipedia, The Free Encyclopedia. November 3, 2023, 09:25 UTC. Available at: https://en.wikipedia.org/w/index.php?title=Regula_falsi&oldid=1183280567. Accessed December 29, 2023.</p>
+<p><a id="falsePositionArabia">[14]</a>Wikipedia contributors. Regula falsi. Wikipedia, The Free Encyclopedia. November 3, 2023, 09:25 UTC. Available at: https://en.wikipedia.org/w/index.php?title=Regula_falsi&oldid=1183280567. Accessed December 29, 2023.</p>
+<p><a id="falsePositionFibonacci">[15]</a>Wikipedia contributors. Regula falsi. Wikipedia, The Free Encyclopedia. November 3, 2023, 09:25 UTC. Available at: https://en.wikipedia.org/w/index.php?title=Regula_falsi&oldid=1183280567. Accessed December 29, 2023.</p>
+<p><a id="problem10">[16]</a>Wikipedia contributors. Moscow Mathematical Papyrus. Wikipedia, The Free Encyclopedia. October 28, 2023, 01:22 UTC. Available at: <a href="https://en.wikipedia.org/w/index.php?title=Moscow_Mathematical_Papyrus&oldid=1182239454">https://en.wikipedia.org/w/index.php?title=Moscow_Mathematical_Papyrus&oldid=1182239454"</a>. Accessed March 23, 2024.</p>
+<p><a id="truncEgypt">[17]</a> .The HISTORY of MATHEMATICS. SCHOOL ONLINE. Available at: 
+			<a href="https://www.youtube.com/watch?v=2WcbPcGrQZU">https://www.youtube.com/watch?v=2WcbPcGrQZU</a>
+			. Accessed March 23, 2024.</p>
+<p><a id="trunc">[18]</a> Intuitive, didactically useful, and historically possible proofs for the two Egyptian pyramid volume formulas (1850 BCE). Thoughts on the border between history and didactics of mathematics.  Siegmund-Schultze, Reinhard. Cornell University,July 10, 2022. Available at: <a href="https://arxiv.org/abs/2207.04427">https://arxiv.org/abs/2207.04427</a>. Accessed February 24, 2024.</p>
+<p><a id="PythagorusEgypt">[19]</a>Chace, Arnold Buffum. The Rhind Mathematical Papyrus. The National Council of Teachers of Mathematics,1968:ix.</p>
+<p><a id="algebraEgypt">[20]</a>Chace, Arnold Buffum. The Rhind Mathematical Papyrus. The National Council of Teachers of Mathematics,1968:9.</p>
+</body>
+</html>
